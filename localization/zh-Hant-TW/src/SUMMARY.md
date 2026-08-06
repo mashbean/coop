@@ -6,6 +6,10 @@
 - [文件入口](docs-home.md)
 - [使用者指南](user/README.md)
   - [基本概念](user/concepts.md)
+  - [人工審查與處置](user/review-console.md)
+  - [Signals](user/signals.md)
+  - [檢舉](user/reports.md)
+  - [申訴](user/appeals.md)
 
 ---
 
