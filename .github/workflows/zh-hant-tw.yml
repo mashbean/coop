@@ -1,0 +1,28 @@
+name: zh-Hant-TW localization
+
+on:
+  pull_request:
+    paths:
+      - localization/zh-Hant-TW/**
+      - docs/**
+      - README.md
+      - .github/workflows/zh-hant-tw.yml
+  push:
+    paths:
+      - localization/zh-Hant-TW/**
+      - docs/**
+      - README.md
+      - .github/workflows/zh-hant-tw.yml
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check localization source and status
+        run: ./localization/zh-Hant-TW/scripts/check.sh

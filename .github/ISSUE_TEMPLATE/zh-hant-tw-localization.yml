@@ -1,0 +1,32 @@
+name: 台灣繁體中文翻譯問題
+description: 回報 Coop 文件的錯譯、術語、來源更新或在地適用疑問
+title: "[zh-Hant-TW] "
+labels:
+  - documentation
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 文件頁面
+      description: 請提供檔案路徑、標題或網址
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 問題說明
+      description: 請指出錯譯、遺漏、來源變動或可能造成錯誤操作之處
+    validations:
+      required: true
+  - type: dropdown
+    id: review
+    attributes:
+      label: 需要的審查
+      options:
+        - 台灣繁體中文
+        - 信任與安全或平台治理
+        - 兒少安全或法律
+        - 技術
+        - 尚不確定
+    validations:
+      required: true

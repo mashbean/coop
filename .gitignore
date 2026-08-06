@@ -15,6 +15,7 @@ client/coverage/
 
 # docs
 docs/book/
+localization/zh-Hant-TW/book/
 
 # misc
 .DS_Store

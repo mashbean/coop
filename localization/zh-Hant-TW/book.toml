@@ -1,0 +1,11 @@
+[book]
+title = "Coop 台灣繁體中文指南"
+language = "zh-Hant-TW"
+src = "src"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/mashbean/coop"
+edit-url-template = "https://github.com/mashbean/coop/edit/codex/zh-hant-tw-foundation/localization/zh-Hant-TW/{path}"
