@@ -25,6 +25,11 @@
   - [Zentropi CoPE](integrations/zentropi-cope.md)
   - [自訂整合](integrations/custom.md)
 
+- [API 參考](api/README.md)
+  - [Errors](api/errors.md)
+  - [Policies API](api/policies.md)
+  - [Appeal API](api/appeal.md)
+
 ---
 
 [授權與翻譯聲明](attribution.md)

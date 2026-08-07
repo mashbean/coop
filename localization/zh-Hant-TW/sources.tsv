@@ -21,14 +21,14 @@ docs/integrations/hma.md	localization/zh-Hant-TW/src/integrations/hma.md	6e4a158
 docs/integrations/ncmec.md	localization/zh-Hant-TW/src/integrations/ncmec.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，仍需法律、兒少安全、資安與事件應變審查
 docs/integrations/openai-moderation.md	localization/zh-Hant-TW/src/integrations/openai-moderation.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，外部服務與繁中效能審查
 docs/integrations/zentropi-cope.md	localization/zh-Hant-TW/src/integrations/zentropi-cope.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，英文限定不得用於繁中自動處置
-docs/api/README.md	localization/zh-Hant-TW/src/api/README.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
+docs/api/README.md	localization/zh-Hant-TW/src/api/README.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第三階段，含 API key 安全提醒
 docs/api/items.md	localization/zh-Hant-TW/src/api/items.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
 docs/api/report.md	localization/zh-Hant-TW/src/api/report.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
-docs/api/appeal.md	localization/zh-Hant-TW/src/api/appeal.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
-docs/api/policies.md	localization/zh-Hant-TW/src/api/policies.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
+docs/api/appeal.md	localization/zh-Hant-TW/src/api/appeal.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第三階段，含資料最小化與重複提交提醒
+docs/api/policies.md	localization/zh-Hant-TW/src/api/policies.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第三階段
 docs/api/actions.md	localization/zh-Hant-TW/src/api/actions.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
 docs/api/partial-items.md	localization/zh-Hant-TW/src/api/partial-items.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
-docs/api/errors.md	localization/zh-Hant-TW/src/api/errors.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
+docs/api/errors.md	localization/zh-Hant-TW/src/api/errors.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第三階段，含安全重試與 log 提醒
 docs/development/README.md	localization/zh-Hant-TW/src/development/README.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
 docs/development/local.md	localization/zh-Hant-TW/src/development/local.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
 docs/development/architecture.md	localization/zh-Hant-TW/src/development/architecture.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
