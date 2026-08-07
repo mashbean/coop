@@ -17,7 +17,7 @@ const socialImagePath = path.join(
 const sourceCssPath = path.join(localeRoot, "theme", "landing.css");
 const outputCssPath = path.join(bookRoot, "landing.css");
 
-const pageUrl = "https://mashbean.github.io/coop/";
+const pageUrl = "https://roost.mashbean.net/";
 const imageUrl = `${pageUrl}assets/coop-zh-hant-tw-social.png`;
 const title = "Coop 台灣繁體中文指南｜小型社群的開放內容治理工具";
 const description =

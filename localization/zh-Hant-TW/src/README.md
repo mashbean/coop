@@ -37,7 +37,7 @@
 
   <aside class="landing-disclosure" aria-label="版本與審查狀態">
     <div class="landing-disclosure-mark"><span aria-hidden="true"></span>透明狀態</div>
-    <p><strong>第一輪翻譯與自動檢查已完成。</strong>第二位語言審查及法律、兒少安全、資安等領域審查仍為待審查；本文尚未獲 ROOST 上游採納。</p>
+    <p><strong>這是 mashbean 維護的非官方繁中社群版本。</strong>第一輪翻譯與自動檢查已完成；第二位語言審查及法律、兒少安全、資安等領域審查仍為待審查，本文尚未獲 ROOST 上游採納。</p>
     <a href="https://github.com/mashbean/coop/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW">查看來源與審查紀錄</a>
   </aside>
 
