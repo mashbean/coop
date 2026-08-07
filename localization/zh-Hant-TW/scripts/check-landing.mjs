@@ -54,7 +54,7 @@ for (const resourceUrl of [
   "https://github.com/mashbean/community/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW",
   "https://github.com/roostorg/model-community",
   "https://mashbean.github.io/playground/zh-Hant-TW/",
-  "https://github.com/roostorg/coop-integration-example",
+  "https://github.com/mashbean/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md",
 ]) {
   expect(indexHtml.includes(`href="${resourceUrl}"`), `missing ecosystem link ${resourceUrl}`);
 }

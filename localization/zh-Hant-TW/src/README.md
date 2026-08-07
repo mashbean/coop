@@ -105,9 +105,9 @@
         <div><strong>Playground</strong><p>繁中第一輪完成，5 / 5 組來源。收錄社群示範與實驗，未必適合正式環境。</p></div>
         <b aria-hidden="true">↗</b>
       </a>
-      <a class="landing-mini-resource" href="https://github.com/roostorg/coop-integration-example">
+      <a class="landing-mini-resource" href="https://github.com/mashbean/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md">
         <span class="landing-mini-resource-index">03</span>
-        <div><strong>Integration Example</strong><p>自訂 Signal、規則與外掛的工程範例。</p></div>
+        <div><strong>Integration Example</strong><p>繁中第一輪完成，1 / 1 份。說明自訂 Signal、規則與 plugin 的工程範例。</p></div>
         <b aria-hidden="true">↗</b>
       </a>
     </div>
