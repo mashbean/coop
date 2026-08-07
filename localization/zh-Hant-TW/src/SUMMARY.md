@@ -1,6 +1,6 @@
 # 目錄
 
-[歡迎使用 Coop 繁中指南](README.md)
+[Coop 台灣繁體中文指南](README.md)
 
 ## 繁中化補充頁面
 
