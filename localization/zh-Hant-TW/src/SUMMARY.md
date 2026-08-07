@@ -26,6 +26,8 @@
   - [自訂整合](integrations/custom.md)
 
 - [API 參考](api/README.md)
+  - [Submit Items API](api/items.md)
+  - [Report API](api/report.md)
   - [Errors](api/errors.md)
   - [Policies API](api/policies.md)
   - [Appeal API](api/appeal.md)
