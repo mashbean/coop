@@ -6,8 +6,11 @@
 - [文件入口](docs-home.md)
 - [使用者指南](user/README.md)
   - [基本概念](user/concepts.md)
+  - [自動處置與路由](user/automated-enforcement.md)
   - [人工審查與處置](user/review-console.md)
   - [Signals](user/signals.md)
+  - [調查](user/investigation.md)
+  - [批次處置](user/bulk-actioning.md)
   - [檢舉](user/reports.md)
   - [申訴](user/appeals.md)
 

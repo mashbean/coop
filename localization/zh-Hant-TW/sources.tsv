@@ -4,11 +4,11 @@ docs/README.md	localization/zh-Hant-TW/src/docs-home.md	6e4a158af00c27cdefb01f37
 docs/SUMMARY.md	localization/zh-Hant-TW/src/SUMMARY.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	目錄隨翻譯進度擴充
 docs/user/README.md	localization/zh-Hant-TW/src/user/README.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含 NCMEC 與外部服務提醒
 docs/user/concepts.md	localization/zh-Hant-TW/src/user/concepts.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含歐盟與台灣適用提醒
-docs/user/automated-enforcement.md	localization/zh-Hant-TW/src/user/automated-enforcement.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第一階段，領域審查
+docs/user/automated-enforcement.md	localization/zh-Hant-TW/src/user/automated-enforcement.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含自動多重處置與敏感資料提醒
 docs/user/review-console.md	localization/zh-Hant-TW/src/user/review-console.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，保留審查員身心健康功能
 docs/user/signals.md	localization/zh-Hant-TW/src/user/signals.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含模型能力與資料流向限制
-docs/user/investigation.md	localization/zh-Hant-TW/src/user/investigation.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第一階段
-docs/user/bulk-actioning.md	localization/zh-Hant-TW/src/user/bulk-actioning.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第一階段，領域審查
+docs/user/investigation.md	localization/zh-Hant-TW/src/user/investigation.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含權限與資料最小化提醒
+docs/user/bulk-actioning.md	localization/zh-Hant-TW/src/user/bulk-actioning.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含外部請求與雙人確認提醒
 docs/user/reports.md	localization/zh-Hant-TW/src/user/reports.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含資料最小化提醒
 docs/user/appeals.md	localization/zh-Hant-TW/src/user/appeals.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含台灣流程設計提醒
 docs/user/child-safety.md	localization/zh-Hant-TW/src/user/child-safety.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第二階段，法律與兒少安全審查
