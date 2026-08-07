@@ -27,7 +27,7 @@ Production 部署至少需要提供下列項目。
 許多設定只在啟用特定功能或更換 backend 時才需要。
 
 - Analytics 與 warehouse backend 由 `WAREHOUSE_ADAPTER` 和 `ANALYTICS_ADAPTER` 控制。支援的 adapter 及相關 ClickHouse/PostgreSQL 設定，請參考 [Data Warehouse Abstraction Layer](data-warehouse.md)。
-- 兒少安全通報為選用功能。若使用 NCMEC 通報，必須先完成 Coop 的組織設定，且只有在部署已獲准進行正式通報後，才可將 server 的 `NCMEC_ENV` 設為 `production`。詳見 [NCMEC CyberTipline 的測試與正式提交](../integrations/ncmec.md#測試與正式提交)。
+- 兒少安全通報為選用功能。若使用 NCMEC 通報，必須先完成 Coop 的組織設定，且只有在部署已獲准進行正式通報後，才可在 server 設定 `NCMEC_ENV=production`。詳見 [NCMEC CyberTipline 的測試與正式提交](../integrations/ncmec.md#測試與正式提交)。
 - Google Places、custom docs/content proxy URLs 等 client-side integrations 為選用項目，不使用相關功能時可留空。
 - `server/.env.example` 中的 third-party integration keys 通常只有在啟用對應 integration 時才需要設定。
 

@@ -1,4 +1,4 @@
-# Coop
+# ![Coop](https://roostorg.github.io/brand/projects/coop-lockup.svg)
 
 **用自己的方式進行審查與內容治理。**
 
@@ -43,11 +43,11 @@ Coop 是持續積極開發的開放原始碼專案。功能與文件會依社群
 
 ## 快速開始
 
-使用 Docker Compose，以單一指令執行 Coop。設定方式與已發布映像檔的詳細資訊，見英文版 [Docker 指南](https://github.com/roostorg/coop/blob/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/development/docker.md)。
+使用 Docker Compose，以單一指令執行 Coop。設定方式與已發布映像檔的詳細資訊，見 [Docker 指南](development/docker.md)。
 
 ## 深入了解
 
-請參閱[繁中使用者指南](user/)。完整英文文件另包含使用者指南、開發指南、API 參考與整合資訊，可從 [Coop 官方文件網站](https://roostorg.github.io/coop/latest)取得。
+繁中版包含[使用者指南](user/)、[開發指南](development/)、[API 參考](api/)與[整合資訊](integrations/)。英文來源可從 [Coop 官方文件網站](https://roostorg.github.io/coop/latest)取得。
 
 ## 台灣使用提醒
 

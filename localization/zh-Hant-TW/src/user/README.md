@@ -61,3 +61,23 @@ Coop 設定完成後，平台可進行下列操作。
 ## 台灣使用提醒
 
 外部服務的「免費」方案、資料用途與使用條件可能變動。涉及內容、帳號、媒體、地理位置或兒少安全資料時，應先確認資料流向、保存期間、權限與契約條款。NCMEC 是美國制度，本指南提及其功能不代表台灣平台的通報義務或法定程序。
+
+<style>
+  .content img {
+    margin-block: 0.5em;
+    border: 0.5em solid color-mix(var(--bg) 80%, white);
+    box-shadow: 0 0.25em 0.5em 0.25em rgba(0 0 0 / 0.1 );
+    box-sizing: border-box;
+  }
+
+  .content table,
+  .content table thead,
+  .content table thead tr,
+  .content table thead th,
+  .content table tbody tr,
+  .content table tbody tr td {
+    background: none !important;
+    border: none !important;
+    padding: 0 0.5em;
+  }
+</style>
