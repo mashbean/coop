@@ -52,7 +52,7 @@ for (const resourceUrl of [
   "https://mashbean.github.io/osprey/",
   "https://github.com/mashbean/awesome-safety-tools/blob/codex/zh-hant-tw-localization/README.zh-Hant-TW.md",
   "https://github.com/mashbean/community/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW",
-  "https://github.com/roostorg/model-community",
+  "https://mashbean.github.io/model-community/",
   "https://mashbean.github.io/playground/zh-Hant-TW/",
   "https://github.com/mashbean/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md",
 ]) {

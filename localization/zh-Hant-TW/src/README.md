@@ -95,9 +95,9 @@
       </a>
     </div>
     <div class="landing-resource-grid landing-resource-grid-secondary" aria-label="延伸資源">
-      <a class="landing-mini-resource" href="https://github.com/roostorg/model-community">
+      <a class="landing-mini-resource" href="https://mashbean.github.io/model-community/">
         <span class="landing-mini-resource-index">01</span>
-        <div><strong>Model Community</strong><p>開放安全模型、政策套件與導入資源。</p></div>
+        <div><strong>Model Community</strong><p>繁中化進行中，已完成 11 / 51 項。涵蓋開放安全模型、評估與導入資源。</p></div>
         <b aria-hidden="true">↗</b>
       </a>
       <a class="landing-mini-resource" href="https://mashbean.github.io/playground/zh-Hant-TW/">
