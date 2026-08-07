@@ -1,4 +1,17 @@
 <div class="coop-landing">
+  <header class="landing-local-nav">
+    <a class="landing-brand" href="./" aria-label="Coop 台灣繁體中文指南首頁">
+      <span class="landing-brand-mark" aria-hidden="true">C</span>
+      <span><strong>Coop</strong><small>台灣繁體中文指南</small></span>
+    </a>
+    <nav aria-label="本頁導覽">
+      <a href="#landing-paths-title">依角色開始</a>
+      <a href="#landing-flow-title">治理流程</a>
+      <a href="#landing-proof-title">驗證方式</a>
+      <a class="landing-nav-cta" href="toc.html">完整目錄</a>
+    </nav>
+  </header>
+
   <section class="landing-hero" aria-labelledby="landing-title">
     <div class="landing-hero-copy">
       <p class="landing-eyebrow">ROOST 開放原始碼工具 × 台灣繁體中文</p>
@@ -10,8 +23,8 @@
       </div>
       <ul class="landing-status" aria-label="繁中化狀態">
         <li><strong>37 / 37</strong><span>上游文件完成第一輪翻譯</span></li>
-        <li><strong>4 道 gate</strong><span>用語、忠實度、建置與連結</span></li>
-        <li><strong>來源固定</strong><span>可追溯至英文 commit</span></li>
+        <li><strong>4 道檢查</strong><span>用語、忠實度、建置與連結</span></li>
+        <li><strong>版本可追溯</strong><span>對應固定的英文來源版本</span></li>
       </ul>
     </div>
     <figure class="landing-product-shot">
@@ -22,10 +35,19 @@
   </section>
 
   <aside class="landing-disclosure" aria-label="版本與審查狀態">
-    <div class="landing-disclosure-mark">透明狀態</div>
-    <p><strong>第一輪翻譯與自動檢查已完成。</strong>第二位語言審查及法律、兒少安全、資安等領域審查仍為 pending；本文尚未獲 ROOST 上游採納。</p>
+    <div class="landing-disclosure-mark"><span aria-hidden="true"></span>透明狀態</div>
+    <p><strong>第一輪翻譯與自動檢查已完成。</strong>第二位語言審查及法律、兒少安全、資安等領域審查仍為待審查；本文尚未獲 ROOST 上游採納。</p>
     <a href="https://github.com/mashbean/coop/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW">查看來源與審查紀錄</a>
   </aside>
+
+  <section class="landing-fit" aria-labelledby="landing-fit-title">
+    <p id="landing-fit-title">適合拿來開始評估</p>
+    <ul>
+      <li><span aria-hidden="true">01</span>志工型社群與論壇</li>
+      <li><span aria-hidden="true">02</span>小型內容平台</li>
+      <li><span aria-hidden="true">03</span>公民科技專案</li>
+    </ul>
+  </section>
 
   <section class="landing-section" aria-labelledby="landing-paths-title">
     <div class="landing-section-heading">
@@ -35,25 +57,25 @@
     </div>
     <div class="landing-path-grid">
       <a class="landing-path-card landing-path-coral" href="user/">
-        <span class="landing-card-number">01</span>
+        <div class="landing-card-meta"><span class="landing-card-number">01</span><span>治理團隊</span></div>
         <h3>社群管理與內容審查</h3>
         <p>理解 Item、Policy、Rule、Queue、Decision 與 Action，建立人工審查的共同語言。</p>
         <span class="landing-card-link">前往使用者指南 <b aria-hidden="true">→</b></span>
       </a>
       <a class="landing-path-card landing-path-teal" href="api/">
-        <span class="landing-card-number">02</span>
+        <div class="landing-card-meta"><span class="landing-card-number">02</span><span>產品團隊</span></div>
         <h3>產品與平台整合</h3>
         <p>串接內容提交、檢舉、申訴、Partial Items 與 Action callbacks。</p>
         <span class="landing-card-link">查看 API 參考 <b aria-hidden="true">→</b></span>
       </a>
       <a class="landing-path-card landing-path-blue" href="development/">
-        <span class="landing-card-number">03</span>
+        <div class="landing-card-meta"><span class="landing-card-number">03</span><span>工程團隊</span></div>
         <h3>工程、資安與維運</h3>
-        <p>評估本機開發、authentication、Docker、部署、架構與資料倉儲。</p>
+        <p>評估本機開發、驗證機制、Docker、部署、架構與資料倉儲。</p>
         <span class="landing-card-link">閱讀開發指南 <b aria-hidden="true">→</b></span>
       </a>
       <a class="landing-path-card landing-path-gold" href="integrations/">
-        <span class="landing-card-number">04</span>
+        <div class="landing-card-meta"><span class="landing-card-number">04</span><span>技術評估</span></div>
         <h3>Signals 與外部服務</h3>
         <p>檢視 HMA、NCMEC、Google、OpenAI、CoPE 與自訂整合的能力及限制。</p>
         <span class="landing-card-link">比較整合方式 <b aria-hidden="true">→</b></span>
@@ -80,7 +102,7 @@
     <div class="landing-proof-copy">
       <p class="landing-kicker">可驗證，不只可閱讀</p>
       <h2 id="landing-proof-title">每次更新都經過同一組自動檢查</h2>
-      <p>繁中內容以來源 manifest 追蹤英文 commit，並用單一 command 檢查翻譯結構與產生後頁面。自動化結果不會取代人類的語言、法律或領域判斷。</p>
+      <p>繁中內容以來源清單追蹤英文版本，並用單一指令檢查翻譯結構與產生後頁面。自動化結果不會取代人類的語言、法律或領域判斷。</p>
       <a class="landing-text-link" href="https://github.com/mashbean/coop/blob/codex/zh-hant-tw-foundation/localization/zh-Hant-TW/WORKFLOW.md">查看完整工作流程 <span aria-hidden="true">↗</span></a>
     </div>
     <ul class="landing-proof-list">
