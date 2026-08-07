@@ -9,7 +9,7 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const localeRoot = path.resolve(scriptDirectory, "..");
 const bookRoot = path.resolve(process.argv[2] ?? path.join(localeRoot, "book"));
 const indexHtml = await readFile(path.join(bookRoot, "index.html"), "utf8");
-const landingCss = await readFile(path.join(localeRoot, "theme", "landing.css"), "utf8");
+const landingCss = await readFile(path.join(bookRoot, "landing.css"), "utf8");
 const socialImage = await readFile(
   path.join(bookRoot, "assets", "coop-zh-hant-tw-social.png"),
 );
@@ -25,6 +25,11 @@ function count(pattern) {
 }
 
 expect(indexHtml.includes('class="landing-local-nav"'), "missing local navigation");
+expect(indexHtml.includes('class="landing-site"'), "missing standalone landing shell");
+expect(indexHtml.includes('href="landing.css"'), "missing standalone landing stylesheet");
+expect(!indexHtml.includes('id="mdbook-sidebar"'), "mdBook sidebar remains on landing page");
+expect(!indexHtml.includes('id="mdbook-menu-bar"'), "mdBook toolbar remains on landing page");
+expect(!indexHtml.includes('class="mdbook-body-container"'), "mdBook body shell remains on landing page");
 expect(indexHtml.includes('aria-label="本頁導覽"'), "missing navigation label");
 expect(count(/class="landing-dire-letter"/g) === 4, "expected four DIRE stages");
 expect(count(/class="landing-resource-card\b/g) === 3, "expected three primary ecosystem cards");
@@ -32,7 +37,7 @@ expect(count(/class="landing-mini-resource"/g) === 3, "expected three secondary 
 expect(count(/class="landing-path-card\b/g) === 4, "expected four role cards");
 expect(count(/<li><span>0[1-5]<\/span>/g) === 5, "expected five governance steps");
 expect(indexHtml.includes('class="landing-disclosure"'), "missing review disclosure");
-expect(indexHtml.includes("<!-- Coop landing metadata -->"), "missing landing metadata");
+expect(indexHtml.includes('rel="canonical"'), "missing canonical URL");
 expect(indexHtml.includes('property="og:image"'), "missing Open Graph image");
 expect(indexHtml.includes('name="twitter:card" content="summary_large_image"'), "missing social card metadata");
 expect(!indexHtml.includes("4 道 gate"), "untranslated gate label remains");
