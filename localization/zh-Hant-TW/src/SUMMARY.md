@@ -35,7 +35,9 @@
   - [Appeal API](api/appeal.md)
 
 - [開發指南](development/README.md)
+  - [API Keys 與 Authentication](development/api-auth.md)
   - [Docker Images](development/docker.md)
+  - [部署](development/deployment.md)
 
 ---
 

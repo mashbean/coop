@@ -6,7 +6,7 @@ Coop 透過自動 Rule、Review Console 內容審查員 Decision，或使用者�
 
 在 Coop 定義每個 Action 時，需提供公開可存取的 callback URL，以及 endpoint 所需的 authentication headers，例如由 Coop 傳送的 API key。Coop 會在傳送至該 endpoint 的每個 request 加入這些 headers。
 
-若要確認新進 request 確實由 Coop 傳送，請檢查 `Coop-Signature` header。Signature verification algorithm 與程式碼範例見英文版 [API Keys & Authentication](https://roostorg.github.io/coop/latest/development/api-auth.html#verifying-incoming-requests-from-coop)。
+若要確認新進 request 確實由 Coop 傳送，請檢查 `Coop-Signature` header。Signature verification algorithm 與程式碼範例見 [API Keys 與 Authentication](../development/api-auth.md#驗證來自-coop-的-request)。
 
 傳送失敗時，Coop 會使用 exponential backoff，最多重試五次。
 
@@ -114,7 +114,7 @@ User Strikes、門檻及關聯 Actions 的設定方式，見使用者指南的 [
 
 ## 安全、隱私與可靠性提醒
 
-- 驗證簽章時應使用原始 request body、常數時間比較與允許的 timestamp 偏差，並防止舊 request replay。確切演算法仍以 Coop authentication 文件與實作為準
+- 驗證簽章時應使用原始 request body，並以 Coop authentication 文件與實作指定的演算法為準。目前 signature 格式沒有 timestamp 或 nonce，重試與 replay 的影響需由冪等 handler 與事件紀錄控制
 - `actorEmail`、`decisionReason`、`actorNote` 與 `reportHistory` 可能包含個人資料、敏感內容或內部判斷，callback endpoint 應採最低權限、加密傳輸、欄位最小化與受控 logging
 - Callback URL 與 headers 由管理設定提供，應限制可接受目的地，避免錯送 secrets，並防範 server-side request forgery
 - 平台應在成功完成 Action 後才回傳 `2xx`。若採非同步處理，需先可靠寫入自己的 Queue，再回傳成功
