@@ -81,7 +81,7 @@
         <p>即時處理平台事件、撰寫安全規則、查詢行為模式，協助團隊回應垃圾訊息、機器人與協同濫用。</p>
         <span class="landing-resource-link">閱讀 Osprey 繁中指南 <b aria-hidden="true">↗</b></span>
       </a>
-      <a class="landing-resource-card landing-resource-tools" href="https://github.com/mashbean/awesome-safety-tools/blob/codex/zh-hant-tw-localization/README.zh-Hant-TW.md">
+      <a class="landing-resource-card landing-resource-tools" href="https://mashbean.github.io/awesome-safety-tools/">
         <div class="landing-resource-meta"><span>繁中第一輪完成</span><span>113 項工具</span></div>
         <h3>開放安全工具地圖</h3>
         <p>依雜湊比對、分類、隱私、規則引擎、審查、調查與聯邦宇宙等 14 個類別尋找可評估的工具。</p>

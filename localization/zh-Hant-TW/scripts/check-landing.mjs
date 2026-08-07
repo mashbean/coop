@@ -53,7 +53,7 @@ for (const anchor of ["landing-ecosystem-title", "landing-paths-title", "landing
 
 for (const resourceUrl of [
   "https://mashbean.github.io/osprey/",
-  "https://github.com/mashbean/awesome-safety-tools/blob/codex/zh-hant-tw-localization/README.zh-Hant-TW.md",
+  "https://mashbean.github.io/awesome-safety-tools/",
   "https://mashbean.github.io/community/",
   "https://mashbean.github.io/model-community/",
   "https://mashbean.github.io/playground/zh-Hant-TW/",
