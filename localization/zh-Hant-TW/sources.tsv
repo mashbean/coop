@@ -18,7 +18,7 @@ docs/integrations/README.md	localization/zh-Hant-TW/src/integrations/README.md	6
 docs/integrations/custom.md	localization/zh-Hant-TW/src/integrations/custom.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，含 plugin 供應鏈與 secrets 提醒
 docs/integrations/google-content-safety.md	localization/zh-Hant-TW/src/integrations/google-content-safety.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，外部服務與兒少安全審查
 docs/integrations/hma.md	localization/zh-Hant-TW/src/integrations/hma.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，敏感雜湊資料與兒少安全審查
-docs/integrations/ncmec.md	localization/zh-Hant-TW/src/integrations/ncmec.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第二階段，法律與兒少安全審查
+docs/integrations/ncmec.md	localization/zh-Hant-TW/src/integrations/ncmec.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，仍需法律、兒少安全、資安與事件應變審查
 docs/integrations/openai-moderation.md	localization/zh-Hant-TW/src/integrations/openai-moderation.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，外部服務與繁中效能審查
 docs/integrations/zentropi-cope.md	localization/zh-Hant-TW/src/integrations/zentropi-cope.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，英文限定不得用於繁中自動處置
 docs/api/README.md	localization/zh-Hant-TW/src/api/README.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
