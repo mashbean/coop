@@ -129,7 +129,7 @@ DataWarehouseAnalytics.bulkWrite()
     ↓
 ClickhouseAnalyticsAdapter / PostgresAnalyticsAdapter
     ↓
-HTTP JSONEachRow (ClickHouse) or batched INSERT (PostgreSQL)
+HTTP JSONEachRow (Clickhouse) or batched INSERT (PostgreSQL)
     ↓
 Analytics tables
 ```

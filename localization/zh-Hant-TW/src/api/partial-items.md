@@ -65,10 +65,12 @@ Response 範例如下。
 {
   "items": [
     {
-      "id": "abc123",
-      "typeId": "def456",
+      "id": "abc123", // the `id` Coop provided
+      "typeId": "def456", // the `typeId` Coop provided
       "data": {
+        // the same shape you'd send via the Items API
         "text": "some text uploaded by a user"
+        // ... all other fields in your Item Type
       }
     }
   ]

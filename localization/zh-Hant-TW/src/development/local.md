@@ -307,7 +307,7 @@ lsof -i :5432    # PostgreSQL
 
 ```sh
 npm run down
-docker volume prune    # Warning: removes all unused Docker volumes
+docker volume prune    # Warning: removes all Docker volumes
 npm run up
 npm run db:update -- --env staging --db api-server-pg
 npm run db:update -- --env staging --db clickhouse
@@ -336,7 +336,7 @@ redis-cli
 ## Code quality
 
 ```sh
-npm run lint             # ESLint
-npm run prettier         # Prettier (check only; use `npm run prettier:fix` to write, alias `npm run format`)
+npm run lint           # ESLint
+npm run prettier       # Prettier (check only; use `npm run prettier:fix` to write, alias `npm run format`)
 npm run check:prepush    # Run before pushing
 ```
