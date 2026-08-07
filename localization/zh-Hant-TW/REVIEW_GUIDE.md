@@ -2,6 +2,8 @@
 
 本指南用於第一輪翻譯完成後的語言與領域審查。每份文件的來源 commit、翻譯狀態與審查狀態記錄於 [`sources.tsv`](sources.tsv)。
 
+需要邀請協作者時，可直接使用 [`REVIEW_REQUEST_TEMPLATE.md`](REVIEW_REQUEST_TEMPLATE.md) 建立審查請求與結果紀錄。
+
 ## 審查角色
 
 ### 語言審查者

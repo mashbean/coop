@@ -36,7 +36,7 @@
 
 完整來源盤點已登記於 [`sources.tsv`](sources.tsv)。37 份上游 Markdown 來源均已完成第一輪翻譯，下一階段是由第二位語言審查者與必要的領域審查者逐份確認。在審查完成前，內容維持 `translated`，不標示為 `reviewed`。NCMEC 文件另需法律、兒少安全、資安與事件應變審查。
 
-審查角色、批次、狀態值與完成條件見 [`REVIEW_GUIDE.md`](REVIEW_GUIDE.md)。
+審查角色、批次、狀態值與完成條件見 [`REVIEW_GUIDE.md`](REVIEW_GUIDE.md)。邀請協作者時，可使用 [`REVIEW_REQUEST_TEMPLATE.md`](REVIEW_REQUEST_TEMPLATE.md)。
 
 ## 完整驗證
 
