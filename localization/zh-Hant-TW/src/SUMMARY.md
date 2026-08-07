@@ -13,6 +13,7 @@
   - [批次處置](user/bulk-actioning.md)
   - [檢舉](user/reports.md)
   - [申訴](user/appeals.md)
+  - [兒少安全（NCMEC）](user/child-safety.md)
   - [指標與報告](user/metrics.md)
   - [管理與設定](user/administration.md)
 
