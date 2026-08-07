@@ -110,6 +110,11 @@
         <div><strong>Integration Example</strong><p>繁中第一輪完成，1 / 1 份。說明自訂 Signal、規則與 plugin 的工程範例。</p></div>
         <b aria-hidden="true">↗</b>
       </a>
+      <a class="landing-mini-resource" href="https://github.com/mashbean/mirror/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md">
+        <span class="landing-mini-resource-index">04</span>
+        <div><strong>Mirror</strong><p>繁中第一輪完成，1 / 1 份。把公開 Git repository 安全鏡像至其他 forge。</p></div>
+        <b aria-hidden="true">↗</b>
+      </a>
     </div>
     <p class="landing-resource-note"><strong>使用提醒</strong> 工具或模型被收錄不代表 ROOST 或繁中維護者背書。採用前仍需核對維護狀態、授權、資料處理方式、語言涵蓋率與適用條件。</p>
   </section>

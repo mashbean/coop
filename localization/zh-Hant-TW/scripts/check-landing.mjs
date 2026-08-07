@@ -33,7 +33,7 @@ expect(!indexHtml.includes('class="mdbook-body-container"'), "mdBook body shell 
 expect(indexHtml.includes('aria-label="本頁導覽"'), "missing navigation label");
 expect(count(/class="landing-dire-letter"/g) === 4, "expected four DIRE stages");
 expect(count(/class="landing-resource-card\b/g) === 3, "expected three primary ecosystem cards");
-expect(count(/class="landing-mini-resource"/g) === 3, "expected three secondary ecosystem cards");
+expect(count(/class="landing-mini-resource"/g) === 4, "expected four secondary ecosystem cards");
 expect(count(/class="landing-path-card\b/g) === 4, "expected four role cards");
 expect(count(/<li><span>0[1-5]<\/span>/g) === 5, "expected five governance steps");
 expect(indexHtml.includes('class="landing-disclosure"'), "missing review disclosure");
@@ -55,6 +55,7 @@ for (const resourceUrl of [
   "https://mashbean.github.io/model-community/",
   "https://mashbean.github.io/playground/zh-Hant-TW/",
   "https://github.com/mashbean/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md",
+  "https://github.com/mashbean/mirror/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md",
 ]) {
   expect(indexHtml.includes(`href="${resourceUrl}"`), `missing ecosystem link ${resourceUrl}`);
 }
