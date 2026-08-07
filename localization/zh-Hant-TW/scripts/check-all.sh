@@ -6,6 +6,7 @@ locale_root="$repo_root/localization/zh-Hant-TW"
 mdbook_bin="${MDBOOK_BIN:-mdbook}"
 
 "$locale_root/scripts/check.sh"
+node "$locale_root/scripts/check-language.mjs"
 node "$locale_root/scripts/check-fidelity.mjs"
 
 if ! command -v "$mdbook_bin" >/dev/null 2>&1; then

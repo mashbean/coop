@@ -100,7 +100,7 @@
 - `domain_review` 為 `approved` 或經明確判斷後標為 `not_required`
 - 所有 changes requested 已修正並重新確認
 - Source 沒有在記錄的 commit 之後發生未核對變更
-- 來源狀態、忠實度、mdBook build、內部連結與章節錨點檢查通過
+- 來源狀態、台灣繁體中文用語、忠實度、mdBook build、內部連結與章節錨點檢查通過
 
 若英文來源更新，應將受影響文件改為 `stale`，只在重新對照變動內容後恢復審查狀態。
 

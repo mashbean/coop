@@ -2,7 +2,7 @@
 
 ## 向 Coop 傳送 request
 
-若要驗證傳送至 Coop 的 request，請在每一個 API request 加入含有組織 API key 的 HTTP header。你可以在 Coop UI 的 **Settings** → **API Keys** 查看或管理 API key。
+若要驗證傳送至 Coop 的 request，請在每一個 API request 加入含有組織 API key 的 HTTP header。API key 可在 Coop UI 的 **Settings** → **API Keys** 查看或管理。
 
 Header 格式如下。
 
@@ -11,11 +11,11 @@ X-API-KEY: <<apiKey>>
 Content-Type: application/json
 ```
 
-你隨時可以在同一頁輪替 API key。輪替後，請更新所有仍使用舊 key 的應用程式或 script。
+API key 隨時可在同一頁輪替。輪替後，請更新所有仍使用舊 key 的應用程式或 script。
 
 ## 驗證來自 Coop 的 request
 
-若要確認傳入 Action APIs 或其他 webhook 的 request 確實由 Coop 傳送，可以驗證 request signature。Coop 會簽署傳送至 endpoint 的每一個 HTTP request，並將 signature 放入 header。你需使用 **webhook signature verification key**，也就是 public key，驗證該 signature。
+若要確認傳入 Action APIs 或其他 webhook 的 request 確實由 Coop 傳送，可以驗證 request signature。Coop 會簽署傳送至 endpoint 的每一個 HTTP request，並將 signature 放入 header。驗證時需使用 **webhook signature verification key**，也就是 public key。
 
 - **Webhook signature verification key** 顯示於 **Settings** → **API Keys** 的「Webhook Signature Verification Key」。需要時可在該處產生新 key。輪替後，請使用新的 public key 更新驗證邏輯。
 

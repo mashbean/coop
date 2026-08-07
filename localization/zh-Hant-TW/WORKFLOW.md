@@ -19,7 +19,7 @@
 4. 台灣情境另以「台灣使用提醒」標示，不寫成 ROOST 原文
 5. 核對專案名稱、API 欄位、角色、數字、版本與功能狀態
 6. 執行 `./localization/zh-Hant-TW/scripts/check-all.sh`
-7. 確認來源狀態、忠實度、mdBook build、內部連結與章節錨點全部通過
+7. 確認來源狀態、台灣繁體中文用語、忠實度、mdBook build、內部連結與章節錨點全部通過
 8. 分別記錄語言審查與領域審查結果
 
 `check-all.sh` 預設使用 PATH 中的 `mdbook`。若 executable 位於其他位置，使用 `MDBOOK_BIN=/path/to/mdbook ./localization/zh-Hant-TW/scripts/check-all.sh`。

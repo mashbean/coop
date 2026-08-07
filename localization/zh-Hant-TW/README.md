@@ -44,7 +44,7 @@
 ./localization/zh-Hant-TW/scripts/check-all.sh
 ```
 
-此 command 會檢查來源與審查狀態、code blocks、inline code、圖片、表格、style blocks、mdBook build，以及產生後的內部連結與章節錨點。若 `mdbook` 不在 PATH，可透過 `MDBOOK_BIN` 指定 executable path。
+此 command 會檢查來源與審查狀態、台灣繁體中文用語、code blocks、inline code、圖片、表格、style blocks、mdBook build，以及產生後的內部連結與章節錨點。若 `mdbook` 不在 PATH，可透過 `MDBOOK_BIN` 指定 executable path。
 
 ## 重要限制
 
