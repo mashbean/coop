@@ -5,7 +5,7 @@
 > [!NOTE]
 > 建議先熟悉 Coop 的[基本概念](../user/concepts.md)，取得更多脈絡。
 
-本指南假設讀者了解基本命令列操作，例如從 Terminal 使用 `bash` 或 `zsh`。Prerequisites、詳細設定、疑難排解等資訊，見英文版 [Local Development](https://roostorg.github.io/coop/latest/development/local.html)。也可閱讀英文版 [Architecture](https://roostorg.github.io/coop/latest/development/architecture.html)。
+本指南假設讀者了解基本命令列操作，例如從 Terminal 使用 `bash` 或 `zsh`。Prerequisites、詳細設定、疑難排解等資訊，見[本機開發](local.md)。也可閱讀英文版 [Architecture](https://roostorg.github.io/coop/latest/development/architecture.html)。
 
 執行 Coop 的步驟如下。
 
@@ -33,7 +33,7 @@
    Docker version 29.4.3, build 055a478
    ```
 
-   若出現 error，請參閱英文版 [Prerequisites](https://roostorg.github.io/coop/latest/development/local.html#prerequisites)。版本範例只代表此文件來源當時狀態，實際版本應以 repository 的 `.nvmrc` 與目前文件為準。
+   若出現 error，請參閱[本機開發的 Prerequisites](local.md#prerequisites)。版本範例只代表此文件來源當時狀態，實際版本應以 repository 的 `.nvmrc` 與目前文件為準。
 
 2. 從 root folder 與各 sub-package 使用 `npm` **安裝 dependencies**
 
@@ -45,7 +45,7 @@
    (cd client && npm install)
    ```
 
-3. 在 `db/`、`server/` 與 `client/` **複製範例 environment files**。預設值可供本機開發與展示使用。詳情見英文版 [Environment Setup](https://roostorg.github.io/coop/latest/development/local.html#environment-setup)
+3. 在 `db/`、`server/` 與 `client/` **複製範例 environment files**。預設值可供本機開發與展示使用。詳情見[本機開發的 Environment 設定](local.md#environment-設定)
 
    ```sh
    # coop/
@@ -54,7 +54,7 @@
    cp client/.env.example client/.env
    ```
 
-4. **啟動所有 backing services**，包括 databases 與 Queues。Ports 與詳細資訊見英文版 [Docker Services](https://roostorg.github.io/coop/latest/development/local.html#docker-services)
+4. **啟動所有 backing services**，包括 databases 與 Queues。Ports 與詳細資訊見[本機開發的 Docker services](local.md#docker-services)
 
    ```sh
    # coop/
@@ -103,7 +103,7 @@
 
    Script 會輸出 org ID 與初始 API key，請立即複製並保存在安全位置。
 
-8. 最後**啟動 application**。其他選項，包括為除錯分別啟動不同 components，見英文版 [Running the Application](https://roostorg.github.io/coop/latest/development/local.html#running-the-application)
+8. 最後**啟動 application**。其他選項，包括為除錯分別啟動不同 components，見[執行 application](local.md#執行-application)
 
    若仍在 `server/`，先回到 project root，再啟動 server 與 client。
 

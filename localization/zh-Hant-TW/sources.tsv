@@ -30,7 +30,7 @@ docs/api/actions.md	localization/zh-Hant-TW/src/api/actions.md	6e4a158af00c27cde
 docs/api/partial-items.md	localization/zh-Hant-TW/src/api/partial-items.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第三階段，含物件授權、secrets 與部分資料提醒
 docs/api/errors.md	localization/zh-Hant-TW/src/api/errors.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第三階段，含安全重試與 log 提醒
 docs/development/README.md	localization/zh-Hant-TW/src/development/README.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第三階段，本機 secrets 與 migration 提醒
-docs/development/local.md	localization/zh-Hant-TW/src/development/local.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
+docs/development/local.md	localization/zh-Hant-TW/src/development/local.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第三階段，仍需開發環境、migration 與 destructive commands 審查
 docs/development/architecture.md	localization/zh-Hant-TW/src/development/architecture.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
 docs/development/api-auth.md	localization/zh-Hant-TW/src/development/api-auth.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第三階段，仍需 authentication 實作與資安審查
 docs/development/data-warehouse.md	localization/zh-Hant-TW/src/development/data-warehouse.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第三階段
