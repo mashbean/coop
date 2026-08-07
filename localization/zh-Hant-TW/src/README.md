@@ -100,9 +100,9 @@
         <div><strong>Model Community</strong><p>開放安全模型、政策套件與導入資源。</p></div>
         <b aria-hidden="true">↗</b>
       </a>
-      <a class="landing-mini-resource" href="https://github.com/roostorg/playground">
+      <a class="landing-mini-resource" href="https://mashbean.github.io/playground/zh-Hant-TW/">
         <span class="landing-mini-resource-index">02</span>
-        <div><strong>Playground</strong><p>社群示範與實驗，未必適合正式環境。</p></div>
+        <div><strong>Playground</strong><p>繁中第一輪完成，5 / 5 組來源。收錄社群示範與實驗，未必適合正式環境。</p></div>
         <b aria-hidden="true">↗</b>
       </a>
       <a class="landing-mini-resource" href="https://github.com/roostorg/coop-integration-example">
