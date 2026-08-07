@@ -38,6 +38,14 @@
 
 審查角色、批次、狀態值與完成條件見 [`REVIEW_GUIDE.md`](REVIEW_GUIDE.md)。
 
+## 完整驗證
+
+```sh
+./localization/zh-Hant-TW/scripts/check-all.sh
+```
+
+此 command 會檢查來源與審查狀態、code blocks、inline code、圖片、表格、style blocks、mdBook build，以及產生後的內部連結與章節錨點。若 `mdbook` 不在 PATH，可透過 `MDBOOK_BIN` 指定 executable path。
+
 ## 重要限制
 
 - 翻譯不等同於繁中模型或 signals 的效能驗證

@@ -77,7 +77,7 @@
 4. 依 [`STYLE_GUIDE.md`](STYLE_GUIDE.md) 檢查台灣繁體中文術語
 5. 檢查繁中補充是否獨立標示，且沒有改寫成 ROOST 原始主張
 6. 需要領域審查的文件，逐項記錄已確認範圍、未確認範圍與後續問題
-7. 執行 `./localization/zh-Hant-TW/scripts/check.sh` 與 `mdbook build localization/zh-Hant-TW`
+7. 執行 `./localization/zh-Hant-TW/scripts/check-all.sh`
 8. 將結果更新至 `sources.tsv`，並在 commit 或 review 記錄中保留審查者、日期與範圍
 
 ## 審查狀態值
@@ -100,7 +100,7 @@
 - `domain_review` 為 `approved` 或經明確判斷後標為 `not_required`
 - 所有 changes requested 已修正並重新確認
 - Source 沒有在記錄的 commit 之後發生未核對變更
-- Localization checks 與 mdBook build 通過
+- 來源狀態、忠實度、mdBook build、內部連結與章節錨點檢查通過
 
 若英文來源更新，應將受影響文件改為 `stale`，只在重新對照變動內容後恢復審查狀態。
 
