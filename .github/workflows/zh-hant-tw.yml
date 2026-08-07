@@ -20,9 +20,22 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
+    env:
+      MDBOOK_VERSION: 0.5.2
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Check localization source and status
-        run: ./localization/zh-Hant-TW/scripts/check.sh
+      - name: Install mdBook
+        run: |
+          archive="mdbook-v${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+          curl --fail --silent --show-error --location \
+            --output mdbook.tar.gz \
+            "https://github.com/rust-lang/mdBook/releases/download/v${MDBOOK_VERSION}/${archive}"
+          mkdir mdbook-bin
+          tar -xzf mdbook.tar.gz -C mdbook-bin
+
+      - name: Run all localization checks
+        env:
+          MDBOOK_BIN: ${{ github.workspace }}/mdbook-bin/mdbook
+        run: ./localization/zh-Hant-TW/scripts/check-all.sh
