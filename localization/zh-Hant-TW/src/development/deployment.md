@@ -1,6 +1,6 @@
 # 部署
 
-你可以在自己的基礎設施上執行 Coop。另請參考 [Docker Images](docker.md) 與英文版 [architecture information](https://roostorg.github.io/coop/latest/development/architecture.html)。
+你可以在自己的基礎設施上執行 Coop。另請參考 [Docker Images](docker.md) 與[架構](architecture.md)。
 
 > [!IMPORTANT]
 > 執行 migrations 時，系統會建立一個含有預設密碼使用者的範例組織。Production 環境務必清除這些帳號與資料。

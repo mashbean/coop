@@ -5,7 +5,7 @@
 > [!NOTE]
 > 建議先熟悉 Coop 的[基本概念](../user/concepts.md)，取得更多脈絡。
 
-本指南假設讀者了解基本命令列操作，例如從 Terminal 使用 `bash` 或 `zsh`。Prerequisites、詳細設定、疑難排解等資訊，見[本機開發](local.md)。也可閱讀英文版 [Architecture](https://roostorg.github.io/coop/latest/development/architecture.html)。
+本指南假設讀者了解基本命令列操作，例如從 Terminal 使用 `bash` 或 `zsh`。Prerequisites、詳細設定、疑難排解等資訊，見[本機開發](local.md)。系統元件與資料流見[架構](architecture.md)。
 
 執行 Coop 的步驟如下。
 

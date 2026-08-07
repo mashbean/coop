@@ -42,7 +42,7 @@ Coop 是 [ROOST](https://roost.tools) 推出的開放原始碼審查與內容治
 
 [![簡化資料流程圖](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/diagram-simple.svg)](https://github.com/roostorg/coop/blob/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/diagram-simple.svg)
 
-詳情請參閱繁中版[基本概念](concepts.md)、英文版[技術架構](https://roostorg.github.io/coop/latest/development/architecture.html)與 [API 參考](https://roostorg.github.io/coop/latest/api/)。
+詳情請參閱[基本概念](concepts.md)、[技術架構](../development/architecture.md)與 [API 參考](../api/README.md)。
 
 ## 管理員入門
 

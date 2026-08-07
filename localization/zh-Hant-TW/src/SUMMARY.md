@@ -36,6 +36,7 @@
 
 - [開發指南](development/README.md)
   - [本機開發](development/local.md)
+  - [架構](development/architecture.md)
   - [API Keys 與 Authentication](development/api-auth.md)
   - [Docker Images](development/docker.md)
   - [部署](development/deployment.md)
