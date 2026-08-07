@@ -1,7 +1,7 @@
 source_path	localized_path	source_commit	status	language_review	domain_review	notes
 README.md	localization/zh-Hant-TW/src/project-overview.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含資料流向提醒
 docs/README.md	localization/zh-Hant-TW/src/docs-home.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段
-docs/SUMMARY.md	localization/zh-Hant-TW/src/SUMMARY.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	目錄隨翻譯進度擴充
+docs/SUMMARY.md	localization/zh-Hant-TW/src/SUMMARY.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	上游目錄完整對應，另保留繁中化補充頁面與授權聲明
 docs/user/README.md	localization/zh-Hant-TW/src/user/README.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含 NCMEC 與外部服務提醒
 docs/user/concepts.md	localization/zh-Hant-TW/src/user/concepts.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含歐盟與台灣適用提醒
 docs/user/automated-enforcement.md	localization/zh-Hant-TW/src/user/automated-enforcement.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含自動多重處置與敏感資料提醒
