@@ -2,7 +2,7 @@
 
 將使用者申訴提交至 Coop。使用者對平台的內容治理 Decision 提出異議時，透過此 API 傳送申訴，並在 Review Console 建立審查 Job。
 
-申訴如何顯示、維持或推翻 Decision 的完整流程，見[申訴](../user/appeals.md)。內容審查員對申訴作成 Decision 後，Coop 會透過英文版 [Appeal Decision Callback](https://roostorg.github.io/coop/latest/api/actions.html#appeal-decision-callback)將結果傳送至平台。
+申訴如何顯示、維持或推翻 Decision 的完整流程，見[申訴](../user/appeals.md)。內容審查員對申訴作成 Decision 後，Coop 會透過 [Appeal Decision callback](actions.md#appeal-decision-callback) 將結果傳送至平台。
 
 ## Endpoint
 
@@ -10,7 +10,7 @@
 POST /api/v1/report/appeal
 ```
 
-驗證使用 `X-API-KEY` header。詳情見英文版 [API Keys & Authentication](https://roostorg.github.io/coop/latest/development/api-auth.html)。
+驗證使用 `X-API-KEY` header。詳情見 [API Keys 與 Authentication](../development/api-auth.md)。
 
 ## Request
 

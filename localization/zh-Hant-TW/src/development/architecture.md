@@ -65,7 +65,7 @@ Coop backend 使用 [BottleJS](https://github.com/young-steveo/bottlejs) 進行 
 
 Coop 透過 REST APIs 接收內容。所有 API requests 都必須在 `x-api-key` header 傳入 organization API key。
 
-所有 endpoints 與 request/response schemas 詳見 [API 參考](../api/README.md)。
+所有 endpoints 與 request/response schemas 詳見 [API 參考](../api/)。
 
 ### 傳入 Coop
 
@@ -83,7 +83,7 @@ Coop 支援兩組 [Rules](../user/automated-enforcement.md)，各自使用不同
 
 ### Proactive Rules
 
-提交 Item 時，Coop 會取得所有與該 Item Type 關聯的 [Proactive Rules](../user/automated-enforcement.md#proactive-rules)。Proactive Rules 會平行執行以決定 automatic Actions，也可能將 Item 傳至 Review Console。
+提交 Item 時，Coop 會取得所有與該 Item Type 關聯的 [Proactive Rules](../user/automated-enforcement.md#主動式規則)。Proactive Rules 會平行執行以決定 automatic Actions，也可能將 Item 傳至 Review Console。
 
 每項 Rule 會以 recursive processing 評估其 `conditionSet`，從 Item 取出 values，視需要將 values 傳入 Signals，再以設定的 comparators 比較結果。
 
@@ -100,7 +100,7 @@ Rule status 包括 `LIVE`、`DRAFT`、`BACKGROUND`、`EXPIRED`。
 
 ### Routing Rules
 
-提交檢舉，或 Proactive Rule 將 Item 傳至 Review Console 時，系統會以 [Routing Rules](../user/automated-enforcement.md#routing-rules) 進行評估。第一個成功的 Routing Rule 會將 Item 以 Job 形式路由至適當 Queue，等待審查。
+提交檢舉，或 Proactive Rule 將 Item 傳至 Review Console 時，系統會以 [Routing Rules](../user/automated-enforcement.md#路由規則) 進行評估。第一個成功的 Routing Rule 會將 Item 以 Job 形式路由至適當 Queue，等待審查。
 
 - Code：`/server/services/manualReviewToolService/modules/JobRouting.ts`
 - Storage tables

@@ -19,9 +19,9 @@ Coop 可連接 Google Content Safety API、OpenAI Moderation API 與 Zentropi Co
 
 [Google Content Safety API]: google-content-safety.md
 [Hasher-Matcher-Actioner（HMA）]: hma.md
-[NCMEC Reporting]: https://roostorg.github.io/coop/latest/integrations/ncmec.html
-[OpenAI Moderation API]: https://roostorg.github.io/coop/latest/integrations/openai-moderation.html
-[Zentropi CoPE]: https://roostorg.github.io/coop/latest/integrations/zentropi-cope.html
+[NCMEC Reporting]: ncmec.md
+[OpenAI Moderation API]: openai-moderation.md
+[Zentropi CoPE]: zentropi-cope.md
 
 [^CSAPI]: 希望保護平台免受濫用的產業與公民社會第三方，可[申請 Content Safety API 存取權](https://protectingchildren.google/toolkit-interest-form/?roost-coop)。申請時請提及使用 Coop 審查工具。申請需經核准，並接受 Google 條款及細則。
 

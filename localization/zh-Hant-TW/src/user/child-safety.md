@@ -5,7 +5,7 @@
 
 Coop 支援透過 [CyberTipline Reporting API](https://report.cybertip.org/ispws/documentation)，向美國 [National Center for Missing & Exploited Children（NCMEC）](https://www.missingkids.org/)通報兒少性虐待素材（CSAM）。Coop 處理完整的偵測、路由與通報生命週期，包括自動標記已知或疑似 CSAM、送至專用 NCMEC 審查 Queue，並引導審查員完成 CyberTip 提交。
 
-設定方式見英文版 [NCMEC 整合文件](https://roostorg.github.io/coop/latest/integrations/ncmec.html)。
+設定方式見 [NCMEC 整合文件](../integrations/ncmec.md)。
 
 ## 存取權與角色
 
@@ -15,7 +15,7 @@ Coop 支援透過 [CyberTipline Reporting API](https://report.cybertip.org/ispws
 
 內容可透過四種方式進入 NCMEC 審查 Queue。
 
-1. **雜湊比對（HMA）**：Coop 透過 [Hasher-Matcher-Actioner（HMA）](https://roostorg.github.io/coop/latest/integrations/hma.html)整合，將上傳媒體與 NCMEC 的已知 CSAM 雜湊資料庫比對。雜湊符合是強而可靠的 Signal
+1. **雜湊比對（HMA）**：Coop 透過 [Hasher-Matcher-Actioner（HMA）](../integrations/hma.md)整合，將上傳媒體與 NCMEC 的已知 CSAM 雜湊資料庫比對。雜湊符合是強而可靠的 Signal
 
 2. **新出現的 CSAM 偵測（Content Safety API）**：對於沒有已知雜湊的內容，Coop 整合 Google Content Safety API，分類圖片是否可能為 CSAM。高信心結果可直接送至 NCMEC Queue，也可先送至初步分類 Queue
 
@@ -23,7 +23,7 @@ Coop 支援透過 [CyberTipline Reporting API](https://report.cybertip.org/ispws
 
 4. **人工升級**：在任何審查 Job 中，具有 NCMEC 存取權的內容審查員都可從 Action 清單選擇 **Enqueue to NCMEC**，立即將 Job 移至 NCMEC Queue
 
-設定方式見英文版 [Routing Content to NCMEC](https://roostorg.github.io/coop/latest/integrations/ncmec.html#routing-content-to-ncmec)。
+設定方式見[將內容路由至 NCMEC](../integrations/ncmec.md#將內容路由至-ncmec)。
 
 ### 內容進入 Queue 後的處理
 
@@ -91,7 +91,7 @@ NCMEC Job 使用者介面與標準審查 Job 不同，設計重點是使用者�
 
 ### 提交 CyberTip
 
-完成必要數量的媒體審查並選擇 incident type 後，選擇 **Submit to NCMEC**。Coop 會自動建立並提交 CyberTip，包括取得補充中繼資料、上傳媒體檔案，以及向 NCMEC 完成報告。技術細節見英文版 [CyberTip Submission Flow](https://roostorg.github.io/coop/latest/integrations/ncmec.html#cybertip-submission-flow)。
+完成必要數量的媒體審查並選擇 incident type 後，選擇 **Submit to NCMEC**。Coop 會自動建立並提交 CyberTip，包括取得補充中繼資料、上傳媒體檔案，以及向 NCMEC 完成報告。技術細節見 [CyberTip 提交流程](../integrations/ncmec.md#cybertip-提交流程)。
 
 傳送前必須審查的媒體數量，由組織設定 **Media review requirement** 控制，位置在 Settings → NCMEC Settings。
 

@@ -23,7 +23,7 @@
 
 實作 Appeal API 前，請先完成[基本概念](concepts.md)所述設定。您需要先在 Coop 設定 [Item Types](concepts.md#item-type)、[Actions](concepts.md#actions) 與 [Policies](concepts.md#policy)。
 
-完整 request schema 與驗證要求見英文版 [Appeal API](https://roostorg.github.io/coop/latest/api/appeal.html)，Appeal Decision Callback 則見英文版 [Handle Moderation Actions](https://roostorg.github.io/coop/latest/api/actions.html#appeal-decision-callback)。
+完整 request schema 與驗證要求見 [Appeal API](../api/appeal.md)，Appeal Decision Callback 則見[處理 Actions](../api/actions.md#appeal-decision-callback)。
 
 ## 台灣使用提醒
 

@@ -16,7 +16,7 @@ On-Call Alert Email 需要在 Coop 部署中整合電子郵件服務。Coop 支�
 
 ### Single Sign-on
 
-啟用以 SAML 為基礎的 SSO，讓使用者透過組織的身分提供者驗證，不使用電子郵件與密碼。Coop 支援任何 SAML 2.0 身分提供者。以 Okta 設定的範例，見英文版部署指南的[單一登入](https://roostorg.github.io/coop/latest/development/deployment.html#single-sign-on)。
+啟用以 SAML 為基礎的 SSO，讓使用者透過組織的身分提供者驗證，不使用電子郵件與密碼。Coop 支援任何 SAML 2.0 身分提供者。以 Okta 設定的範例，見部署指南的 [Single Sign-on](../development/deployment.md#single-sign-on)。
 
 ![Settings 的 SSO 分頁，顯示 SAML／SSO 啟用切換，以及 SSO URL 與 SAML Certificate 欄位。](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/settings-sso.png)
 
@@ -40,7 +40,7 @@ On-Call Alert Email 需要在 Coop 部署中整合電子郵件服務。Coop 支�
 
 ### 其他
 
-不適合歸入其他分頁的設定，包括 [Partial Items](https://roostorg.github.io/coop/latest/api/partial-items.html) 端點，以及讓 Job Decision 引用多項 Policy 的功能。
+不適合歸入其他分頁的設定，包括 [Partial Items](../api/partial-items.md) 端點，以及讓 Job Decision 引用多項 Policy 的功能。
 
 ![Settings 的 Other 分頁，包含 Partial Items Endpoint、Partial Items Request Headers、Reporting Rules、Multiple Policies Per Action 與 User Strike TTL。](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/settings-other.png)
 
@@ -58,7 +58,7 @@ Action 代表 Proactive Rule 或內容審查員 Decision 可對 Item 執行的�
 
 ![已設定的自訂 Action 表格，包括傳送警告、標記為垃圾內容、刪除內容、刪除帳號與封鎖電子郵件。](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/actions.png)
 
-Action 會與平台上的 API 端點配對。技術細節見英文版 [Handling Actions](https://roostorg.github.io/coop/latest/api/actions.html)。
+Action 會與平台上的 API 端點配對。技術細節見[處理 Actions](../api/actions.md)。
 
 ![在 Coop 建立 Action，設定名稱、說明、可執行 Action 的 Item Type，以及 callback URL。](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/define-action.png)
 
@@ -111,7 +111,7 @@ X-API-KEY: <<apiKey>>
 Content-Type: application/json
 ```
 
-若要確認 Action 端點收到的 request 確實由 Coop 傳送，請使用 **Settings** → **API Keys** 顯示的 webhook signature verification key。實作細節見英文版開發指南的 [API Keys and Authentication](https://roostorg.github.io/coop/latest/development/api-auth.html)。
+若要確認 Action 端點收到的 request 確實由 Coop 傳送，請使用 **Settings** → **API Keys** 顯示的 webhook signature verification key。實作細節見開發指南的 [API Keys 與 Authentication](../development/api-auth.md)。
 
 ## 台灣使用提醒
 

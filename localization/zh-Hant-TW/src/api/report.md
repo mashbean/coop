@@ -10,7 +10,7 @@ Coop 如何處理 Report、Routing Rules 與 NCMEC 的完整流程，見[檢舉]
 POST /api/v1/report
 ```
 
-驗證使用 `X-API-KEY` header。詳情見英文版 [API Keys & Authentication](https://roostorg.github.io/coop/latest/development/api-auth.html)。
+驗證使用 `X-API-KEY` header。詳情見 [API Keys 與 Authentication](../development/api-auth.md)。
 
 ## Request
 

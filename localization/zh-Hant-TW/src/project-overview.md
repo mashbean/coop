@@ -47,7 +47,7 @@ Coop 是持續積極開發的開放原始碼專案。功能與文件會依社群
 
 ## 深入了解
 
-請參閱[繁中使用者指南](user/README.md)。完整英文文件另包含使用者指南、開發指南、API 參考與整合資訊，可從 [Coop 官方文件網站](https://roostorg.github.io/coop/latest)取得。
+請參閱[繁中使用者指南](user/)。完整英文文件另包含使用者指南、開發指南、API 參考與整合資訊，可從 [Coop 官方文件網站](https://roostorg.github.io/coop/latest)取得。
 
 ## 台灣使用提醒
 

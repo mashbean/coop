@@ -48,7 +48,7 @@ Coop 也支援變體比對，以找出規避嘗試。例如，比對 `hello` 時
 
 ### 雜湊資料庫
 
-Hash Bank 保存已知有害媒體的感知指紋。Coop 搭配 HMA 使用這些資料，將圖片與影片和已知的 CSAM、非自願私密影像（NCII）、暴力極端主義或恐怖主義內容（TVEC），以及自行建立指紋的內容資料庫比對。設定方式見英文版 [Hasher-Matcher-Actioner（HMA）](https://roostorg.github.io/coop/latest/integrations/hma.html)。
+Hash Bank 保存已知有害媒體的感知指紋。Coop 搭配 HMA 使用這些資料，將圖片與影片和已知的 CSAM、非自願私密影像（NCII）、暴力極端主義或恐怖主義內容（TVEC），以及自行建立指紋的內容資料庫比對。設定方式見 [Hasher-Matcher-Actioner（HMA）](../integrations/hma.md)。
 
 ![雜湊資料庫](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/hma-ui-coop-banks.png)
 

@@ -2,7 +2,7 @@
 
 將 [Item](../user/concepts.md#item) 傳送至 Coop，進行自動 Rule 評估。每次提交 Item，Coop 都會使用所有已設定的[主動式規則](../user/automated-enforcement.md#主動式規則)進行評估。
 
-Item 建立、編輯、遭檢舉或需要重新評估時，都應提交。如果上線後才設定新 Rule，也應追溯提交既有 Item。若要讓 Coop 依需要取得 Item 及其屬性，見英文版 [Partial Items API](https://roostorg.github.io/coop/latest/api/partial-items.html)。
+Item 建立、編輯、遭檢舉或需要重新評估時，都應提交。如果上線後才設定新 Rule，也應追溯提交既有 Item。若要讓 Coop 依需要取得 Item 及其屬性，見 [Partial Items API](partial-items.md)。
 
 ## Endpoint
 
@@ -10,7 +10,7 @@ Item 建立、編輯、遭檢舉或需要重新評估時，都應提交。如果
 POST /api/v1/items/async/
 ```
 
-驗證使用 `X-API-KEY` header。詳情見英文版 [API Keys & Authentication](https://roostorg.github.io/coop/latest/development/api-auth.html)。
+驗證使用 `X-API-KEY` header。詳情見 [API Keys 與 Authentication](../development/api-auth.md)。
 
 ## Request
 
@@ -90,7 +90,7 @@ Coop 以未驗證的 GET requests 取得媒體，不會將 API key 或其他憑�
 
 - **非同步處理**：此 endpoint 為大量非同步處理設計。Submission 會進入 Redis Queue，透過 BullMQ 交由 background workers 處理
 - **立即結果**：實作若嚴格要求同步處理，也就是在相同 HTTP response 收到 Rule results，可使用舊版 `POST /api/v1/content/` endpoint。舊版 endpoint 不支援 batch submissions 或自動 HMA 圖片雜湊
-- **Action Callbacks**：Rule 符合並觸發 Action 時，Coop 會對英文版所述 [Action callback endpoint](https://roostorg.github.io/coop/latest/api/actions.html)送出 POST request
+- **Action Callbacks**：Rule 符合並觸發 Action 時，Coop 會對[處理 Actions](actions.md)所述的 callback endpoint 送出 POST request
 - **基本概念**：Item Types 與 Coop 如何識別 Items，見[基本概念](../user/concepts.md)
 
 ## 安全與隱私提醒

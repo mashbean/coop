@@ -4,7 +4,7 @@
 
 文件依讀者身分與需求分成幾份指南。
 
-- [繁中使用者指南](user/README.md)：了解 Coop、功能與使用者介面
+- [繁中使用者指南](user/)：了解 Coop、功能與使用者介面
 - [英文開發指南](https://roostorg.github.io/coop/latest/development/)：執行 Coop 並了解程式碼結構
 - [英文 API 參考](https://roostorg.github.io/coop/latest/api/)：Coop API 技術參考
 - [英文整合指南](https://roostorg.github.io/coop/latest/integrations/)：內建整合的詳細資訊

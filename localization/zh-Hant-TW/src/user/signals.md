@@ -31,11 +31,11 @@ Coop 提供多種分析文字的 Signals。
 
 按一下即可連接 Google Content Safety API、OpenAI Moderation API 與 Zentropi CoPE 等安全服務 API。Coop 已內建多種整合，只需輸入 API 金鑰。每項整合都有 model card，以一致且可比較的方式說明運作方式。
 
-詳細資訊見英文版[整合文件](https://roostorg.github.io/coop/latest/integrations/)。
+詳細資訊見[整合文件](../integrations/)。
 
 ## 自訂整合
 
-部署 Coop 的平台可以透過自訂整合加入任何 Signal，例如自建機器學習模型，或使用 Coop 無法直接存取的內部資料。詳細資訊見英文版[自訂整合](https://roostorg.github.io/coop/latest/integrations/custom.html)。
+部署 Coop 的平台可以透過自訂整合加入任何 Signal，例如自建機器學習模型，或使用 Coop 無法直接存取的內部資料。詳細資訊見[自訂整合](../integrations/custom.md)。
 
 ## 台灣使用提醒
 

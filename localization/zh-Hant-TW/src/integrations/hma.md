@@ -39,22 +39,22 @@ Hash Bank 是已知有害媒體指紋的集合，可供 Rule 引用。您可以�
 
 在 HMA 建立以 NCMEC exchange 為來源的 Bank。HMA 會依背景擷取排程開始同步雜湊，預設每五分鐘一次。同步完成後，NCMEC 來源 Bank 會顯示在 Coop **Matching Banks**。
 
-詳情見英文版 [NCMEC CyberTipline 整合](https://roostorg.github.io/coop/latest/integrations/ncmec.html)。
+詳情見 [NCMEC CyberTipline 整合](ncmec.md)。
 
 ## 在 Rules 中使用 HMA Signals
 
 HMA 連線並設定 Hash Banks 後，圖片雜湊 Signal 可同時用於 Routing Rules 與 Proactive Rules。
 
-- 若要路由來自[使用者 Report](https://roostorg.github.io/coop/latest/api/report.html) 的內容，請建立含雜湊比對邏輯的[路由規則](../user/automated-enforcement.md#路由規則)，並送至所需 Queue。若是 NCMEC 符合項目，應送至已設定的 NCMEC Queue
+- 若要路由來自[使用者 Report](../api/report.md) 的內容，請建立含雜湊比對邏輯的[路由規則](../user/automated-enforcement.md#路由規則)，並送至所需 Queue。若是 NCMEC 符合項目，應送至已設定的 NCMEC Queue
 
   ![使用 HMA 雜湊比對的 Routing Rule。](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/routing-rule-hma.png)
 
-- 對透過 [Items API](https://roostorg.github.io/coop/latest/api/items.html) 提交的內容，若希望 Coop 在沒有使用者 Report 時主動計算雜湊並標記符合項目，請建立含圖片雜湊條件及「Enqueue to NCMEC」Action 的[主動式規則](../user/automated-enforcement.md#主動式規則)
+- 對透過 [Items API](../api/items.md) 提交的內容，若希望 Coop 在沒有使用者 Report 時主動計算雜湊並標記符合項目，請建立含圖片雜湊條件及「Enqueue to NCMEC」Action 的[主動式規則](../user/automated-enforcement.md#主動式規則)
 
 ## 另請參閱
 
 - [自動處置與路由](../user/automated-enforcement.md)，了解如何建立 Rule
-- 英文版 [NCMEC CyberTipline](https://roostorg.github.io/coop/latest/integrations/ncmec.html)，了解 NCMEC 整合設定
+- [NCMEC CyberTipline](ncmec.md)，了解 NCMEC 整合設定
 
 ## 台灣使用提醒
 

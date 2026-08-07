@@ -6,7 +6,7 @@
 
 若要使用此 API，平台必須提供可接收 Coop POST requests 的 Partial Items API endpoint。Coop 需要平台上特定 Item 的資訊時，會將該 Item 唯一 ID 傳送至此 endpoint。
 
-若要確認新進 request 確實由 Coop 傳送，請檢查 `Coop-Signature` header。Signature verification algorithm 與程式碼範例見英文版 [API Keys & Authentication](https://roostorg.github.io/coop/latest/development/api-auth.html#verifying-incoming-requests-from-coop)。
+若要確認新進 request 確實由 Coop 傳送，請檢查 `Coop-Signature` header。Signature verification algorithm 與程式碼範例見 [API Keys 與 Authentication](../development/api-auth.md#驗證來自-coop-的-request)。
 
 > [!IMPORTANT]
 > 依此英文來源版本，**尚無法從 Coop 使用者介面設定此功能**，必須從程式碼管理。詳情見 [roostorg/coop#378](https://github.com/roostorg/coop/issues/378)。

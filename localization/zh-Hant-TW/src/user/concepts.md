@@ -12,7 +12,7 @@
 
 Item Type 代表平台上的不同 Item 類型。例如，社群網路可能有 _Profile_、_Post_、_Comment_ 與 _Comment Thread_。市集平台可能包含 _Buyer_、_Seller_、_Product Listing_、_Product Review_、_Direct Message_ 與 _Transaction_ 等。傳送至 Coop 的每個 Item，都必須只屬於其中一種 Item Type。
 
-設定流程的第一步，是在 Coop 的 **Settings** → **Item Types** 中[定義 Item Types](https://roostorg.github.io/coop/latest/user/administration.html#item-types)。
+設定流程的第一步，是在 Coop 的 **Settings** → **Item Types** 中[定義 Item Types](administration.md#item-types)。
 
 ### Item Type 的類別
 
@@ -66,7 +66,7 @@ Action 會顯示在 Proactive Rules 中，供符合條件的 Item 使用。在 R
 
 設定流程的第二步，是在 Coop 的 **Settings** → **Actions** 定義這些 Action。
 
-Coop 傳送至 Action API 端點的 webhook payload 詳情，見英文版 [Handling Actions](https://roostorg.github.io/coop/latest/api/actions.html)。
+Coop 傳送至 Action API 端點的 webhook payload 詳情，見[處理 Actions](../api/actions.md)。
 
 ## Policy
 
@@ -76,7 +76,7 @@ Policy 可包含子政策。例如，_Spam_ 政策可有 _Commercial Spam_、_Re
 
 將每個 Action 對應至一項或多項特定 Policy 通常很實用，在某些情況下也是必要要求，例如歐盟《數位服務法》。同一則留言可能依 _Hate Speech_ 政策遭到 _Delete_，也可能依 _Spam_ 政策遭到 _Delete_。Coop 可分別追蹤這些差異，並計算各 Policy 下採取的 Action 數量。如此可以觀察各 Policy 長期執行成效、辨識處置成效不佳或惡化的 Policy，並向組織管理層或主管機關報告成效指標，例如製作 DSA 透明度報告。
 
-您可以從 **Policies** 資訊儀表板建立及管理 Policy，也可以透過英文版 [Policies API](https://roostorg.github.io/coop/latest/api/policies.html) 以程式存取。從 Coop 使用者介面加入的 Policy，也會直接顯示在 Review Console 的英文版 [Job view](https://roostorg.github.io/coop/latest/user/review-console.html#job-view)，供審查員查看。
+您可以從 **Policies** 資訊儀表板建立及管理 Policy，也可以透過 [Policies API](../api/policies.md) 以程式存取。從 Coop 使用者介面加入的 Policy，也會直接顯示在 Review Console 的 [Job 檢視](review-console.md#job-檢視)，供審查員查看。
 
 > **台灣使用提醒**
 > 上述《數位服務法》範例描述歐盟制度，不代表台灣平台適用相同義務。即使法律沒有要求，把處置與明確政策依據連結，仍有助於一致性、申訴、稽核與透明度。
@@ -89,15 +89,15 @@ Report 被送至 Review Console 的 Queue 時，系統會建立 Job。每個 Job
 
 平台使用者標記 Item 時，系統會建立 Report。Report API 用於人工審查，無論來源是使用者標記，或只是為了觸發人工標記流程。平台使用者標記 Item 並由平台傳送至 Report API 後，Coop 會把它送到 Review Console，供內容審查員決定如何處理。
 
-更多資訊見英文版[檢舉文件](https://roostorg.github.io/coop/latest/user/reports.html)。
+更多資訊見[檢舉文件](reports.md)。
 
 ## Appeals
 
 平台使用者不同意內容治理決策時，可能希望「申訴」，也就是要求平台重新查看並確認最初決策是否正確。如果平台支援此功能，Coop 可協助處理完整申訴流程。對部分受歐盟《數位服務法》規範的平台而言，提供申訴是必要要求。
 
-平台使用者要求團隊複核內容治理決策時，可以在 Coop 建立 Appeal。使用者在平台提出申訴後，平台可將申訴要求傳送至英文版 [Appeal API](https://roostorg.github.io/coop/latest/api/appeal.html)。Coop 會將其加入 Review Queue，讓內容審查員決定維持或推翻原始決策。
+平台使用者要求團隊複核內容治理決策時，可以在 Coop 建立 Appeal。使用者在平台提出申訴後，平台可將申訴要求傳送至 [Appeal API](../api/appeal.md)。Coop 會將其加入 Review Queue，讓內容審查員決定維持或推翻原始決策。
 
-更多資訊見英文版[申訴文件](https://roostorg.github.io/coop/latest/user/appeals.html)。
+更多資訊見[申訴文件](appeals.md)。
 
 > **台灣使用提醒**
 > 上述申訴義務範例同樣描述歐盟制度。台灣社群仍應依服務類型、契約、社群規範與適用法令，確認申訴、通知及救濟安排。

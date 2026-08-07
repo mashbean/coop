@@ -8,7 +8,7 @@
 GET /api/v1/policies/
 ```
 
-驗證使用 `X-API-KEY` header。詳情見英文版 [API Keys & Authentication](https://roostorg.github.io/coop/latest/development/api-auth.html)。
+驗證使用 `X-API-KEY` header。詳情見 [API Keys 與 Authentication](../development/api-auth.md)。
 
 ## Response
 

@@ -5,7 +5,7 @@
 > [!NOTE]
 > 建議先熟悉 Coop 的[基本概念](../user/concepts.md)，取得更多脈絡。
 
-本頁著重提供詳細資訊與參考資料。若只想快速開始執行，請閱讀[開始使用](./README.md)。系統元件與資料流見[架構](architecture.md)。
+本頁著重提供詳細資訊與參考資料。若只想快速開始執行，請閱讀[開始使用](./)。系統元件與資料流見[架構](architecture.md)。
 
 ## Prerequisites
 

@@ -13,11 +13,11 @@ Report 是使用者產生的 signals 進入內容治理工作流程的主要方�
 3. 將 Job 送到該 Queue，若沒有符合的 Rule，則送到預設 Queue
 4. 讓該 Queue 中下一位可用的內容審查員取得 Job
 
-若 `reportedForReason.csam` 為 `true`，Job 會直接送到 NCMEC Queue，不經一般 Routing Rule 評估。詳細資訊見英文版 [Child Safety (NCMEC)](https://roostorg.github.io/coop/latest/user/child-safety.html)。
+若 `reportedForReason.csam` 為 `true`，Job 會直接送到 NCMEC Queue，不經一般 Routing Rule 評估。詳細資訊見[兒少安全（NCMEC）](child-safety.md)。
 
 ## 將檢舉傳送至 Coop
 
-Report 透過 `POST /api/v1/report` 提交。完整 API schema，包括欄位定義、型別與必要條件，見英文版 [Report API](https://roostorg.github.io/coop/latest/api/report.html)。
+Report 透過 `POST /api/v1/report` 提交。完整 API schema，包括欄位定義、型別與必要條件，見 [Report API](../api/report.md)。
 
 ## 將惡意檢舉者的檢舉設為無效
 
