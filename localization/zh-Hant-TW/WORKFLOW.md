@@ -9,6 +9,8 @@
 - `stale` 英文來源已有變更，需要重新核對
 - `blocked` 因授權、術語、法律或上游架構問題暫停
 
+語言與領域審查欄位使用 `pending`、`in_review`、`changes_requested`、`approved` 或 `not_required`。完整條件見 [`REVIEW_GUIDE.md`](REVIEW_GUIDE.md)。
+
 ## 每批步驟
 
 1. 從最新 `upstream/main` 核對來源文件
