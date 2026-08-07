@@ -24,7 +24,7 @@ Coop 是 [ROOST](https://roost.tools) 推出的開放原始碼審查與內容治
   | --- | --- |
   | [![NCMEC 工作](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/ncmec-job.png)](https://github.com/roostorg/coop/blob/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/ncmec-job.png) | [![HMA 路由](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/routing-rule-hma.png)](https://github.com/roostorg/coop/blob/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/routing-rule-hma.png) |
 
-- **[指標與報告](https://roostorg.github.io/coop/latest/user/metrics.html)**：提供資訊儀表板與詳細稽核紀錄，以利問責，並了解內容治理的成效與趨勢
+- **[指標與報告](metrics.md)**：提供資訊儀表板與詳細稽核紀錄，以利問責，並了解內容治理的成效與趨勢
 
   | [![資訊儀表板](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/dashboard.png)](https://github.com/roostorg/coop/blob/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/dashboard.png) | [![近期決策](https://raw.githubusercontent.com/roostorg/coop/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/recent-decisions.png)](https://github.com/roostorg/coop/blob/6e4a158af00c27cdefb01f37c95f7e67f7b27c23/docs/images/recent-decisions.png) |
   | --- | --- |
@@ -49,9 +49,9 @@ Coop 是 [ROOST](https://roost.tools) 推出的開放原始碼審查與內容治
 建議先熟悉 Coop 的繁中版[基本概念](concepts.md)。了解後，依序完成下列設定。
 
 1. 確認您有 Coop instance 的帳號與 API 金鑰
-2. 定義 [Item Types](https://roostorg.github.io/coop/latest/user/administration.html#item-types)，也就是平台上的內容與行為者類型
-3. 輸入詳細的平台[政策](https://roostorg.github.io/coop/latest/user/administration.html#policies)
-4. 定義[動作](https://roostorg.github.io/coop/latest/user/administration.html#actions)，並提供 [callback 端點](https://roostorg.github.io/coop/latest/api/actions.html)，讓 Coop 可觸發平台上的處置
+2. 定義 [Item Types](administration.md#item-types)，也就是平台上的內容與行為者類型
+3. 輸入詳細的平台[政策](administration.md#policies)
+4. 定義[動作](administration.md#actions)，並提供 [callback 端點](https://roostorg.github.io/coop/latest/api/actions.html)，讓 Coop 可觸發平台上的處置
 
 Coop 設定完成後，平台可進行下列操作。
 
