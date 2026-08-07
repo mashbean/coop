@@ -5,6 +5,7 @@
       <span><strong>Coop</strong><small>台灣繁體中文指南</small></span>
     </a>
     <nav aria-label="本頁導覽">
+      <a href="#landing-ecosystem-title">ROOST 生態系</a>
       <a href="#landing-paths-title">依角色開始</a>
       <a href="#landing-flow-title">治理流程</a>
       <a href="#landing-proof-title">驗證方式</a>
@@ -47,6 +48,70 @@
       <li><span aria-hidden="true">02</span>小型內容平台</li>
       <li><span aria-hidden="true">03</span>公民科技專案</li>
     </ul>
+  </section>
+
+  <section class="landing-section landing-ecosystem-section" aria-labelledby="landing-ecosystem-title">
+    <div class="landing-section-heading">
+      <p class="landing-kicker">ROOST 安全工具生態系</p>
+      <h2 id="landing-ecosystem-title">從偵測到執行，看見完整治理流程</h2>
+      <p>不同規模的社群可以從目前最需要的環節開始。DIRE 將安全工作拆成偵測、調查、審查與執行，讓工具選擇回到實際責任與流程。</p>
+    </div>
+    <ol class="landing-dire" aria-label="DIRE 安全治理流程">
+      <li>
+        <span class="landing-dire-letter">D</span>
+        <div><small>Detection</small><strong>偵測</strong><p>安全模型、雜湊比對與平台 Signals 找出需要注意的內容或行為。</p></div>
+      </li>
+      <li>
+        <span class="landing-dire-letter">I</span>
+        <div><small>Investigation</small><strong>調查</strong><p>Osprey 協助分析事件、關聯實體與協同行為，再建立可重複使用的規則。</p></div>
+      </li>
+      <li>
+        <span class="landing-dire-letter">R</span>
+        <div><small>Review</small><strong>審查</strong><p>Coop 將內容送到適當 Queue，提供脈絡並保存人工判斷。</p></div>
+      </li>
+      <li>
+        <span class="landing-dire-letter">E</span>
+        <div><small>Enforcement</small><strong>執行</strong><p>自動規則或人工決定透過 Action 回到平台，並保留申訴與稽核紀錄。</p></div>
+      </li>
+    </ol>
+    <div class="landing-resource-grid landing-resource-grid-primary">
+      <a class="landing-resource-card landing-resource-osprey" href="https://roost.tools/osprey">
+        <div class="landing-resource-meta"><span>ROOST 核心工具</span><span>偵測與調查</span></div>
+        <h3>Osprey</h3>
+        <p>即時處理平台事件、撰寫安全規則、查詢行為模式，協助團隊回應垃圾訊息、機器人與協同濫用。</p>
+        <span class="landing-resource-link">查看 Osprey 官方介紹 <b aria-hidden="true">↗</b></span>
+      </a>
+      <a class="landing-resource-card landing-resource-tools" href="https://github.com/mashbean/awesome-safety-tools/blob/codex/zh-hant-tw-localization/README.zh-Hant-TW.md">
+        <div class="landing-resource-meta"><span>繁中第一輪完成</span><span>113 項工具</span></div>
+        <h3>開放安全工具地圖</h3>
+        <p>依雜湊比對、分類、隱私、規則引擎、審查、調查與聯邦宇宙等 14 個類別尋找可評估的工具。</p>
+        <span class="landing-resource-link">瀏覽繁中工具清單 <b aria-hidden="true">↗</b></span>
+      </a>
+      <a class="landing-resource-card landing-resource-community" href="https://github.com/mashbean/community/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW">
+        <div class="landing-resource-meta"><span>繁中第一輪完成</span><span>14 份文件</span></div>
+        <h3>ROOST 社群與治理</h3>
+        <p>認識專案路線圖、參與角色、社群平台、資安與開發規範，以及文件和會議協作方式。</p>
+        <span class="landing-resource-link">查看繁中社群文件 <b aria-hidden="true">↗</b></span>
+      </a>
+    </div>
+    <div class="landing-resource-grid landing-resource-grid-secondary" aria-label="延伸資源">
+      <a class="landing-mini-resource" href="https://github.com/roostorg/model-community">
+        <span class="landing-mini-resource-index">01</span>
+        <div><strong>Model Community</strong><p>開放安全模型、政策套件與導入資源。</p></div>
+        <b aria-hidden="true">↗</b>
+      </a>
+      <a class="landing-mini-resource" href="https://github.com/roostorg/playground">
+        <span class="landing-mini-resource-index">02</span>
+        <div><strong>Playground</strong><p>社群示範與實驗，未必適合正式環境。</p></div>
+        <b aria-hidden="true">↗</b>
+      </a>
+      <a class="landing-mini-resource" href="https://github.com/roostorg/coop-integration-example">
+        <span class="landing-mini-resource-index">03</span>
+        <div><strong>Integration Example</strong><p>自訂 Signal、規則與外掛的工程範例。</p></div>
+        <b aria-hidden="true">↗</b>
+      </a>
+    </div>
+    <p class="landing-resource-note"><strong>使用提醒</strong> 工具或模型被收錄不代表 ROOST 或繁中維護者背書。採用前仍需核對維護狀態、授權、資料處理方式、語言涵蓋率與適用條件。</p>
   </section>
 
   <section class="landing-section" aria-labelledby="landing-paths-title">

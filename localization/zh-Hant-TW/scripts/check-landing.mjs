@@ -26,6 +26,9 @@ function count(pattern) {
 
 expect(indexHtml.includes('class="landing-local-nav"'), "missing local navigation");
 expect(indexHtml.includes('aria-label="本頁導覽"'), "missing navigation label");
+expect(count(/class="landing-dire-letter"/g) === 4, "expected four DIRE stages");
+expect(count(/class="landing-resource-card\b/g) === 3, "expected three primary ecosystem cards");
+expect(count(/class="landing-mini-resource"/g) === 3, "expected three secondary ecosystem cards");
 expect(count(/class="landing-path-card\b/g) === 4, "expected four role cards");
 expect(count(/<li><span>0[1-5]<\/span>/g) === 5, "expected five governance steps");
 expect(indexHtml.includes('class="landing-disclosure"'), "missing review disclosure");
@@ -35,9 +38,20 @@ expect(indexHtml.includes('name="twitter:card" content="summary_large_image"'), 
 expect(!indexHtml.includes("4 道 gate"), "untranslated gate label remains");
 expect(!indexHtml.includes("仍為 pending"), "untranslated review status remains");
 
-for (const anchor of ["landing-paths-title", "landing-flow-title", "landing-proof-title"]) {
+for (const anchor of ["landing-ecosystem-title", "landing-paths-title", "landing-flow-title", "landing-proof-title"]) {
   expect(indexHtml.includes(`href="#${anchor}"`), `missing navigation link for ${anchor}`);
   expect(indexHtml.includes(`id="${anchor}"`), `missing navigation target for ${anchor}`);
+}
+
+for (const resourceUrl of [
+  "https://roost.tools/osprey",
+  "https://github.com/mashbean/awesome-safety-tools/blob/codex/zh-hant-tw-localization/README.zh-Hant-TW.md",
+  "https://github.com/mashbean/community/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW",
+  "https://github.com/roostorg/model-community",
+  "https://github.com/roostorg/playground",
+  "https://github.com/roostorg/coop-integration-example",
+]) {
+  expect(indexHtml.includes(`href="${resourceUrl}"`), `missing ecosystem link ${resourceUrl}`);
 }
 
 expect(landingCss.includes("@media (max-width: 620px)"), "missing mobile layout rules");
