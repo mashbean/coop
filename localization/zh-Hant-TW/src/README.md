@@ -75,11 +75,11 @@
       </li>
     </ol>
     <div class="landing-resource-grid landing-resource-grid-primary">
-      <a class="landing-resource-card landing-resource-osprey" href="https://github.com/mashbean/osprey/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW">
-        <div class="landing-resource-meta"><span>第一輪進行中</span><span>22 / 26 份</span></div>
+      <a class="landing-resource-card landing-resource-osprey" href="https://mashbean.github.io/osprey/">
+        <div class="landing-resource-meta"><span>第一輪完成</span><span>26 / 26 份</span></div>
         <h3>Osprey</h3>
         <p>即時處理平台事件、撰寫安全規則、查詢行為模式，協助團隊回應垃圾訊息、機器人與協同濫用。</p>
-        <span class="landing-resource-link">查看 Osprey 繁中工作區 <b aria-hidden="true">↗</b></span>
+        <span class="landing-resource-link">閱讀 Osprey 繁中指南 <b aria-hidden="true">↗</b></span>
       </a>
       <a class="landing-resource-card landing-resource-tools" href="https://github.com/mashbean/awesome-safety-tools/blob/codex/zh-hant-tw-localization/README.zh-Hant-TW.md">
         <div class="landing-resource-meta"><span>繁中第一輪完成</span><span>113 項工具</span></div>
