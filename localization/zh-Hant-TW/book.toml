@@ -9,3 +9,4 @@ build-dir = "book"
 [output.html]
 git-repository-url = "https://github.com/mashbean/coop"
 edit-url-template = "https://github.com/mashbean/coop/edit/codex/zh-hant-tw-foundation/localization/zh-Hant-TW/{path}"
+additional-css = ["theme/landing.css"]
