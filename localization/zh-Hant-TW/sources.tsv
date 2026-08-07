@@ -14,10 +14,10 @@ docs/user/appeals.md	localization/zh-Hant-TW/src/user/appeals.md	6e4a158af00c27c
 docs/user/child-safety.md	localization/zh-Hant-TW/src/user/child-safety.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，仍需法律與兒少安全獨立審查
 docs/user/metrics.md	localization/zh-Hant-TW/src/user/metrics.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含指標解讀與匯出資料提醒
 docs/user/administration.md	localization/zh-Hant-TW/src/user/administration.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第一階段，含最低權限與 secrets 提醒
-docs/integrations/README.md	localization/zh-Hant-TW/src/integrations/README.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第二階段
+docs/integrations/README.md	localization/zh-Hant-TW/src/integrations/README.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，費用與資格需重新核對
 docs/integrations/custom.md	localization/zh-Hant-TW/src/integrations/custom.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第二階段
-docs/integrations/google-content-safety.md	localization/zh-Hant-TW/src/integrations/google-content-safety.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第二階段，外部服務
-docs/integrations/hma.md	localization/zh-Hant-TW/src/integrations/hma.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第二階段，敏感雜湊資料
+docs/integrations/google-content-safety.md	localization/zh-Hant-TW/src/integrations/google-content-safety.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，外部服務與兒少安全審查
+docs/integrations/hma.md	localization/zh-Hant-TW/src/integrations/hma.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	translated	pending	pending	第二階段，敏感雜湊資料與兒少安全審查
 docs/integrations/ncmec.md	localization/zh-Hant-TW/src/integrations/ncmec.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第二階段，法律與兒少安全審查
 docs/integrations/openai-moderation.md	localization/zh-Hant-TW/src/integrations/openai-moderation.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第二階段，外部服務
 docs/integrations/zentropi-cope.md	localization/zh-Hant-TW/src/integrations/zentropi-cope.md	6e4a158af00c27cdefb01f37c95f7e67f7b27c23	not_started	pending	pending	第二階段，外部模型

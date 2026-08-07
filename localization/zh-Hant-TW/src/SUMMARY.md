@@ -17,6 +17,10 @@
   - [指標與報告](user/metrics.md)
   - [管理與設定](user/administration.md)
 
+- [整合](integrations/README.md)
+  - [Google Content Safety API](integrations/google-content-safety.md)
+  - [Hasher-Matcher-Actioner（HMA）](integrations/hma.md)
+
 ---
 
 [授權與翻譯聲明](attribution.md)
