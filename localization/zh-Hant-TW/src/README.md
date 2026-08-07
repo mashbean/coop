@@ -97,7 +97,7 @@
     <div class="landing-resource-grid landing-resource-grid-secondary" aria-label="延伸資源">
       <a class="landing-mini-resource" href="https://mashbean.github.io/model-community/">
         <span class="landing-mini-resource-index">01</span>
-        <div><strong>Model Community</strong><p>繁中化進行中，已完成 11 / 51 項。涵蓋開放安全模型、評估與導入資源。</p></div>
+        <div><strong>Model Community</strong><p>自動處理完成 51 / 51 項，含 37 份第一輪譯文與 14 份高風險安全參考。</p></div>
         <b aria-hidden="true">↗</b>
       </a>
       <a class="landing-mini-resource" href="https://mashbean.github.io/playground/zh-Hant-TW/">
