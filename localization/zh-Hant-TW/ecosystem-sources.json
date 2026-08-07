@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Community",
+    "upstream": "roostorg/community",
+    "fork": "mashbean/community",
+    "localizationBranch": "codex/zh-hant-tw-foundation",
+    "manifestPath": "localization/zh-Hant-TW/sources.tsv",
+    "defaultBranch": "main",
+    "publicUrl": "https://mashbean.github.io/community/"
+  },
+  {
+    "name": "Awesome Safety Tools",
+    "upstream": "roostorg/awesome-safety-tools",
+    "fork": "mashbean/awesome-safety-tools",
+    "localizationBranch": "codex/zh-hant-tw-localization",
+    "manifestPath": "localization/zh-Hant-TW/sources.tsv",
+    "defaultBranch": "main",
+    "publicUrl": "https://github.com/mashbean/awesome-safety-tools/blob/codex/zh-hant-tw-localization/README.zh-Hant-TW.md"
+  },
+  {
+    "name": "Coop",
+    "upstream": "roostorg/coop",
+    "fork": "mashbean/coop",
+    "localizationBranch": "codex/zh-hant-tw-foundation",
+    "manifestPath": "localization/zh-Hant-TW/sources.tsv",
+    "defaultBranch": "main",
+    "publicUrl": "https://roost.mashbean.net/"
+  },
+  {
+    "name": "Model Community",
+    "upstream": "roostorg/model-community",
+    "fork": "mashbean/model-community",
+    "localizationBranch": "codex/zh-hant-tw-foundation",
+    "manifestPath": "localization/zh-Hant-TW/sources.tsv",
+    "sourceCommitPath": "localization/zh-Hant-TW/SOURCE_COMMIT",
+    "defaultBranch": "main",
+    "publicUrl": "https://mashbean.github.io/model-community/"
+  },
+  {
+    "name": "Playground",
+    "upstream": "roostorg/playground",
+    "fork": "mashbean/playground",
+    "localizationBranch": "codex/zh-hant-tw-foundation",
+    "manifestPath": "localization/zh-Hant-TW/sources.tsv",
+    "sourceCommitPath": "localization/zh-Hant-TW/SOURCE_COMMIT",
+    "defaultBranch": "main",
+    "publicUrl": "https://mashbean.github.io/playground/zh-Hant-TW/"
+  },
+  {
+    "name": "Integration Example",
+    "upstream": "roostorg/coop-integration-example",
+    "fork": "mashbean/coop-integration-example",
+    "localizationBranch": "codex/zh-hant-tw-foundation",
+    "manifestPath": "localization/zh-Hant-TW/sources.tsv",
+    "sourceCommitPath": "localization/zh-Hant-TW/SOURCE_COMMIT",
+    "defaultBranch": "main",
+    "publicUrl": "https://github.com/mashbean/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md"
+  },
+  {
+    "name": "Mirror",
+    "upstream": "roostorg/mirror",
+    "fork": "mashbean/mirror",
+    "localizationBranch": "codex/zh-hant-tw-foundation",
+    "manifestPath": "localization/zh-Hant-TW/sources.tsv",
+    "sourceCommitPath": "localization/zh-Hant-TW/SOURCE_COMMIT",
+    "defaultBranch": "main",
+    "publicUrl": "https://github.com/mashbean/mirror/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md"
+  },
+  {
+    "name": "Osprey",
+    "upstream": "roostorg/osprey",
+    "fork": "mashbean/osprey",
+    "localizationBranch": "codex/zh-hant-tw-foundation",
+    "manifestPath": "localization/zh-Hant-TW/sources.tsv",
+    "defaultBranch": "main",
+    "publicUrl": "https://mashbean.github.io/osprey/"
+  }
+]

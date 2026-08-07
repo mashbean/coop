@@ -1,0 +1,33 @@
+name: Check zh-Hant-TW ecosystem freshness
+
+on:
+  push:
+    branches:
+      - codex/zh-hant-tw-foundation
+    paths:
+      - localization/zh-Hant-TW/ecosystem-sources.json
+      - localization/zh-Hant-TW/scripts/check-ecosystem-freshness.mjs
+      - .github/workflows/zh-hant-tw-ecosystem.yml
+  pull_request:
+    paths:
+      - localization/zh-Hant-TW/ecosystem-sources.json
+      - localization/zh-Hant-TW/scripts/check-ecosystem-freshness.mjs
+      - .github/workflows/zh-hant-tw-ecosystem.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Compare translated sources with ROOST upstream
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node localization/zh-Hant-TW/scripts/check-ecosystem-freshness.mjs

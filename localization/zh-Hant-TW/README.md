@@ -38,6 +38,14 @@
 
 審查角色、批次、狀態值與完成條件見 [`REVIEW_GUIDE.md`](REVIEW_GUIDE.md)。邀請協作者時，可使用 [`REVIEW_REQUEST_TEMPLATE.md`](REVIEW_REQUEST_TEMPLATE.md)。
 
+ROOST 公開組織目前八個具明確專案授權或已建立翻譯工作區的 repository，均已納入繁中入口與來源監測。組織層級的 `roostorg/.github` 尚未確認可供衍生翻譯的授權條款，因此不以自動化方式複製或翻譯；待 ROOST 明確授權後再納入。
+
+跨專案清單記錄於 [`ecosystem-sources.json`](ecosystem-sources.json)，可執行下列 command 檢查實際翻譯來源是否在上游發生變動。檢查會略過只影響程式碼或其他非翻譯來源的提交，避免把所有上游活動都誤判成譯文過期。
+
+```sh
+node localization/zh-Hant-TW/scripts/check-ecosystem-freshness.mjs
+```
+
 ## 完整驗證
 
 ```sh

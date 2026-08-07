@@ -44,3 +44,11 @@
 ## 英文來源更新
 
 來源變動後，檢查程式會要求重新核對。只翻譯實際變動的段落，更新來源 commit，再重新進行需要的語言與領域審查。
+
+## 生態系來源監測
+
+`ecosystem-sources.json` 登記繁中入口涵蓋的 ROOST 專案、fork 分支、來源清單與公開網址。`check-ecosystem-freshness.mjs` 會讀取各 fork 的 `sources.tsv` 及必要的 `SOURCE_COMMIT`，再使用 GitHub compare API 判斷清單中的英文來源是否真的改變。
+
+這項檢查只會回報已登記的翻譯來源，不會因上游程式碼、測試或其他文件更新而直接將譯文標成過期。檢查失敗時，仍需逐份查看差異、更新該專案的來源紀錄與翻譯，不能只把來源 commit 改成最新版。
+
+GitHub Actions 會在監測設定或程式變更時自動執行，也可從 Actions 頁面手動執行 `Check zh-Hant-TW ecosystem freshness`。由於 GitHub 的排程工作只從 repository 預設分支執行，目前不在未經確認的情況下改動 fork 預設分支；若日後要每日排程，應先決定是否將繁中維護分支設為預設分支，或把監測移至獨立的維運 repository。

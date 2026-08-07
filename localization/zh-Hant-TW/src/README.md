@@ -87,7 +87,7 @@
         <p>依雜湊比對、分類、隱私、規則引擎、審查、調查與聯邦宇宙等 14 個類別尋找可評估的工具。</p>
         <span class="landing-resource-link">瀏覽繁中工具清單 <b aria-hidden="true">↗</b></span>
       </a>
-      <a class="landing-resource-card landing-resource-community" href="https://github.com/mashbean/community/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW">
+      <a class="landing-resource-card landing-resource-community" href="https://mashbean.github.io/community/">
         <div class="landing-resource-meta"><span>繁中第一輪完成</span><span>14 份文件</span></div>
         <h3>ROOST 社群與治理</h3>
         <p>認識專案路線圖、參與角色、社群平台、資安與開發規範，以及文件和會議協作方式。</p>
