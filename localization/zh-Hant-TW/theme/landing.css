@@ -409,6 +409,63 @@ ol {
   white-space: nowrap;
 }
 
+.landing-case-study {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 1.4rem 0 0;
+  padding: 1.35rem 1.5rem;
+  color: var(--landing-ink);
+  text-decoration: none;
+  background:
+    radial-gradient(circle at 88% 20%, rgba(232, 116, 81, 0.2), transparent 28%),
+    linear-gradient(135deg, #fffaf1, #edf7f4);
+  border: 1px solid rgba(20, 54, 66, 0.16);
+  border-radius: 1.2rem;
+  box-shadow: 0 0.7rem 2rem rgba(22, 53, 62, 0.07);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.landing-case-study:hover {
+  transform: translateY(-3px);
+  border-color: rgba(20, 54, 66, 0.3);
+  box-shadow: 0 1rem 2.6rem rgba(22, 53, 62, 0.12);
+}
+
+.landing-case-study-index {
+  padding: 0.45rem 0.7rem;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  background: #d76042;
+  border-radius: 999px;
+}
+
+.landing-case-study-copy {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.landing-case-study-copy strong {
+  font-family: var(--landing-display);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.25;
+}
+
+.landing-case-study-copy > span {
+  color: var(--landing-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.landing-case-study > b {
+  color: #d76042;
+  font-size: 0.84rem;
+  white-space: nowrap;
+}
+
 .landing-fit {
   display: grid;
   grid-template-columns: minmax(170px, 0.5fr) 2fr;
@@ -1181,6 +1238,20 @@ ol {
 
   .landing-disclosure {
     padding: 20px;
+  }
+
+  .landing-case-study {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1.15rem;
+  }
+
+  .landing-case-study-index {
+    justify-self: start;
+  }
+
+  .landing-case-study > b {
+    white-space: normal;
   }
 
   .landing-fit {

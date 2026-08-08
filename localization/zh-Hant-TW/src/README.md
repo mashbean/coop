@@ -5,6 +5,7 @@
       <span><strong>Coop</strong><small>台灣繁體中文指南</small></span>
     </a>
     <nav aria-label="本頁導覽">
+      <a href="matters-roost.html">Matters 對照</a>
       <a href="#landing-ecosystem-title">ROOST 生態系</a>
       <a href="#landing-paths-title">依角色開始</a>
       <a href="#landing-flow-title">治理流程</a>
@@ -40,6 +41,15 @@
     <p><strong>這是 mashbean 維護的非官方繁中社群版本。</strong>第一輪翻譯與自動檢查已完成；第二位語言審查及法律、兒少安全、資安等領域審查仍為待審查，本文尚未獲 ROOST 上游採納。</p>
     <a href="https://github.com/mashbean/coop/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW">查看來源與審查紀錄</a>
   </aside>
+
+  <a class="landing-case-study" href="matters-roost.html">
+    <span class="landing-case-study-index">台灣平台實例</span>
+    <span class="landing-case-study-copy">
+      <strong>把 Matters 與 ROOST 放上同一張架構圖</strong>
+      <span>從社群產品、垃圾模型與集團偵測，一路看到里長室、守望相助、救濟、小黑屋與抗審查發布。</span>
+    </span>
+    <b aria-hidden="true">前往架構盤點 →</b>
+  </a>
 
   <section class="landing-fit" aria-labelledby="landing-fit-title">
     <p id="landing-fit-title">適合拿來開始評估</p>

@@ -5,6 +5,7 @@
 ## 繁中化補充頁面
 
 - [Coop 專案概覽](project-overview.md)
+- [Matters 與 ROOST 架構對照](matters-roost.md)
 - [英文文件入口說明](docs-home.md)
 
 ---

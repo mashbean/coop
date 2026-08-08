@@ -17,7 +17,9 @@ fi
 
 "$mdbook_bin" build "$locale_root"
 node "$locale_root/scripts/build-standalone-landing.mjs" "$locale_root/book"
+node "$locale_root/scripts/build-standalone-architecture.mjs" "$locale_root/book"
 node "$locale_root/scripts/check-landing.mjs" "$locale_root/book"
+node "$locale_root/scripts/check-architecture.mjs" "$locale_root/book"
 node "$locale_root/scripts/check-rendered-links.mjs" "$locale_root/book"
 git diff --check -- "$locale_root"
 
