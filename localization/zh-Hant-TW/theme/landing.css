@@ -225,7 +225,7 @@ ol {
 .landing-hero h1 {
   max-width: 760px;
   margin-bottom: 28px;
-  font-size: clamp(44px, 5.1vw, 72px);
+  font-size: clamp(44px, 4.4vw, 64px);
   font-weight: 850;
   letter-spacing: -0.055em;
   line-height: 1.08;

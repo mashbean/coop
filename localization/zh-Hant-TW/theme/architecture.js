@@ -6,7 +6,8 @@
     root.querySelectorAll("[data-scene-trigger]"),
   );
   const sceneLabel = root.querySelector(".architecture-scene-label");
-  const tags = Array.from(root.querySelectorAll(".architecture-tag"));
+  const steps = Array.from(root.querySelectorAll("[data-scene-step]"));
+  const ownerPanels = Array.from(root.querySelectorAll("[data-owner]"));
 
   const setScene = (scene, animate = true) => {
     const activeStory = stories.find(
@@ -21,28 +22,62 @@
       else story.removeAttribute("aria-current");
     });
 
+    steps.forEach((step) => {
+      const isActive = step.dataset.sceneStep === scene;
+      step.classList.toggle("is-active", isActive);
+      if (isActive) step.setAttribute("aria-current", "step");
+      else step.removeAttribute("aria-current");
+    });
+
     if (sceneLabel && activeStory) {
       sceneLabel.textContent = activeStory.dataset.sceneTitle ?? "架構圖";
     }
 
     if (!animate || !window.gsap) return;
 
-    const activeTags = tags.filter((tag) => {
+    const activePanels = ownerPanels.filter((panel) => {
+      if (scene === "base") return false;
       if (scene === "compare") return true;
-      return tag.dataset.owner === scene;
+      return panel.dataset.owner === scene;
     });
-    const inactiveTags = tags.filter((tag) => !activeTags.includes(tag));
+    const inactivePanels = ownerPanels.filter(
+      (panel) => !activePanels.includes(panel),
+    );
+    const inactivePanelOpacity = scene === "base" ? 0 : 0.08;
+    const activeStep = steps.filter((step) => step.dataset.sceneStep === scene);
+    const inactiveSteps = steps.filter((step) => !activeStep.includes(step));
 
-    window.gsap
-      .timeline({ defaults: { duration: 0.42, ease: "power2.out" } })
+    const sceneTimeline = window.gsap.timeline({
+      defaults: { duration: 0.38, ease: "power2.out" },
+    });
+
+    if (inactivePanels.length) {
+      sceneTimeline.to(
+        inactivePanels,
+        {
+          autoAlpha: inactivePanelOpacity,
+          scale: 0.985,
+          overwrite: "auto",
+        },
+        0,
+      );
+    }
+    if (activePanels.length) {
+      sceneTimeline.to(
+        activePanels,
+        { autoAlpha: 1, scale: 1, stagger: 0.035, overwrite: "auto" },
+        0,
+      );
+    }
+    sceneTimeline
       .to(
-        inactiveTags,
-        { autoAlpha: 0.16, scale: 0.97, overwrite: "auto" },
+        inactiveSteps,
+        { autoAlpha: 0.48, scale: 1, overwrite: "auto" },
         0,
       )
       .to(
-        activeTags,
-        { autoAlpha: 1, scale: 1, stagger: 0.025, overwrite: "auto" },
+        activeStep,
+        { autoAlpha: 1, scale: 1.025, overwrite: "auto" },
         0,
       );
   };
@@ -50,6 +85,7 @@
   if (!window.gsap || !window.ScrollTrigger) {
     root.dataset.scene = "compare";
     stories.forEach((story) => story.classList.add("is-active"));
+    steps.forEach((step) => step.classList.add("is-active"));
     return;
   }
 
@@ -68,9 +104,10 @@
       const { desktop, reduceMotion } = context.conditions;
 
       if (reduceMotion || !desktop) {
-        root.dataset.scene = "compare";
-        tags.forEach((tag) => gsap.set(tag, { clearProps: "all" }));
+        setScene("compare", false);
+        ownerPanels.forEach((panel) => gsap.set(panel, { clearProps: "all" }));
         stories.forEach((story) => story.classList.add("is-active"));
+        steps.forEach((step) => step.classList.add("is-active"));
         return;
       }
 
@@ -82,8 +119,13 @@
           duration: 0.8,
         })
         .from(
-          ".architecture-layer",
-          { autoAlpha: 0, y: 10, stagger: 0.07, duration: 0.55 },
+          ".architecture-step",
+          { autoAlpha: 0, y: 8, stagger: 0.06, duration: 0.45 },
+          "-=0.48",
+        )
+        .from(
+          ".architecture-zone",
+          { autoAlpha: 0, y: 10, stagger: 0.06, duration: 0.5 },
           "-=0.45",
         );
 
@@ -101,7 +143,8 @@
 
       return () => {
         triggers.forEach((trigger) => trigger.kill());
-        tags.forEach((tag) => gsap.set(tag, { clearProps: "all" }));
+        ownerPanels.forEach((panel) => gsap.set(panel, { clearProps: "all" }));
+        steps.forEach((step) => gsap.set(step, { clearProps: "all" }));
       };
     },
   );

@@ -16,8 +16,8 @@
     <section class="architecture-hero" aria-labelledby="architecture-title">
       <div class="architecture-hero-copy">
         <p class="architecture-eyebrow">Matters × ROOST 架構盤點</p>
-        <h1 id="architecture-title">同一張社群平台底圖，看懂兩套治理方法</h1>
-        <p class="architecture-lead">先把一個社群平台拆成介面、產品、治理、資料與發布五個層次，再把 Matters 已建立的治理模組及 ROOST 開放工具放回正確位置。這樣能看見哪些能力可以互相對位，哪些差異源自平台制度與社群脈絡。</p>
+        <h1 id="architecture-title">Matters 怎麼治理社群，ROOST 可以接在哪裡</h1>
+        <p class="architecture-lead">這張圖先畫出使用者、平台、治理與發布之間的關係，再逐步放入 Matters 的垃圾偵測、社群審查、申訴與抗審查發布，最後對照 ROOST 的 Model Community、Osprey 與 Coop。</p>
         <div class="architecture-actions">
           <a class="architecture-button architecture-button-primary" href="#architecture-map">開始看架構圖</a>
           <a class="architecture-button architecture-button-secondary" href="#architecture-differences">直接比較差異</a>
@@ -36,161 +36,92 @@
     </section>
     <aside class="architecture-method">
       <strong>閱讀原則</strong>
-      <p>程式庫中存在的模組，代表可以定位實作與責任邊界，不等同每項功能都已在正式環境啟用。模型門檻、功能開關、排程及自動處置狀態仍需由營運端另行確認。</p>
+      <p>圖上標成「程式碼可定位」的項目，只代表在公開 repository 找得到實作。模型門檻、功能開關、排程與自動處置是否啟用，仍要查看正式環境設定。</p>
     </aside>
     <section class="architecture-scrolly" id="architecture-map" aria-labelledby="architecture-map-title">
       <div class="architecture-visual-column">
         <figure class="architecture-map">
           <div class="architecture-map-header">
-            <div>
-              <p>共同架構底圖</p>
-              <h2 id="architecture-map-title">一個社群平台如何運作</h2>
+            <div><p>共同架構底圖</p><h2 id="architecture-map-title">一則內容在社群平台裡怎麼走</h2></div>
+            <span class="architecture-scene-label" aria-live="polite">01 平台骨架</span>
+          </div>
+          <ol class="architecture-step-rail" aria-label="四個比較步驟">
+            <li class="architecture-step is-active" data-scene-step="base"><span class="architecture-step-number">01</span><i class="architecture-step-icon step-icon-map" aria-hidden="true"><b></b><b></b><b></b><b></b></i><strong>平台骨架</strong></li>
+            <li class="architecture-step" data-scene-step="matters"><span class="architecture-step-number">02</span><i class="architecture-step-icon step-icon-matters" aria-hidden="true"><b></b><b></b><b></b></i><strong>Matters 模組</strong></li>
+            <li class="architecture-step" data-scene-step="roost"><span class="architecture-step-number">03</span><i class="architecture-step-icon step-icon-roost" aria-hidden="true"><b></b><b></b><b></b></i><strong>ROOST 工具</strong></li>
+            <li class="architecture-step" data-scene-step="compare"><span class="architecture-step-number">04</span><i class="architecture-step-icon step-icon-compare" aria-hidden="true"><b></b><b></b></i><strong>並排比較</strong></li>
+          </ol>
+          <div class="architecture-platform" aria-label="社群平台共同架構">
+            <div class="architecture-platform-label"><span>固定不動的底圖</span><strong>使用者 → 產品 → 治理 → 對外發布</strong></div>
+            <div class="architecture-zone-flow">
+              <article class="architecture-zone architecture-zone-entry">
+                <span class="architecture-zone-index">A</span><i class="architecture-zone-icon zone-icon-entry" aria-hidden="true"></i><small>使用者</small><strong>閱讀與發言</strong><p>發文、留言、檢舉、申訴</p>
+              </article>
+              <article class="architecture-zone architecture-zone-product">
+                <span class="architecture-zone-index">B</span><i class="architecture-zone-icon zone-icon-product" aria-hidden="true"></i><small>產品</small><strong>介面與平台核心</strong><p>內容、帳號、排序、通知</p>
+                <div class="architecture-owner-panel architecture-owner-matters" data-owner="matters"><b>Matters</b><span>matters-web</span><span>matters-server</span></div>
+                <div class="architecture-owner-panel architecture-owner-roost" data-owner="roost"><b>ROOST</b><span>Action callback</span></div>
+              </article>
+              <article class="architecture-zone architecture-zone-governance">
+                <span class="architecture-zone-index">C</span><i class="architecture-zone-icon zone-icon-governance" aria-hidden="true"></i><small>治理</small><strong>判斷與處置</strong><p>偵測、調查、審查、救濟</p>
+                <div class="architecture-owner-panel architecture-owner-matters" data-owner="matters"><b>Matters</b><span>垃圾模型／集團偵測</span><span>里長室／守望相助</span><span>小黑屋／救濟</span></div>
+                <div class="architecture-owner-panel architecture-owner-roost" data-owner="roost"><b>ROOST</b><span>Model Community</span><span>Osprey</span><span>Coop</span></div>
+              </article>
+              <article class="architecture-zone architecture-zone-publish">
+                <span class="architecture-zone-index">D</span><i class="architecture-zone-icon zone-icon-publish" aria-hidden="true"></i><small>發布</small><strong>內容送往站外</strong><p>保存、存取、跨站流通</p>
+                <div class="architecture-owner-panel architecture-owner-matters" data-owner="matters"><b>Matters</b><span>IPFS／IPNS</span><span>Onion／Fediverse</span></div>
+                <div class="architecture-owner-panel architecture-owner-roost architecture-owner-gap" data-owner="roost"><b>ROOST</b><span>沒有直接對應工具</span></div>
+              </article>
             </div>
-            <span class="architecture-scene-label" aria-live="polite">平台基礎</span>
+            <div class="architecture-foundation"><span>共同底座</span><strong>PostgreSQL</strong><strong>Redis</strong><strong>搜尋與推薦</strong><strong>背景工作</strong></div>
           </div>
-          <div class="architecture-stack">
-            <section class="architecture-layer architecture-layer-surface" data-layer="surface">
-              <header><span>01</span><div><small>Surface</small><strong>使用者與產品介面</strong></div></header>
-              <div class="architecture-node-grid architecture-node-grid-three">
-                <article class="architecture-node" data-node="people">
-                  <small>People</small><strong>讀者、作者與社群</strong><p>閱讀、創作、互動、檢舉及申訴</p>
-                </article>
-                <article class="architecture-node" data-node="public-web">
-                  <small>Public product</small><strong>Matters Web</strong><p>文章、動態、留言、個人頁與探索介面</p>
-                  <div class="architecture-tags"><span class="architecture-tag architecture-tag-matters" data-owner="matters">matters-web</span></div>
-                </article>
-                <article class="architecture-node" data-node="admin">
-                  <small>Operations</small><strong>管理與社群協作介面</strong><p>工作清單、審查、設定與公開紀錄</p>
-                  <div class="architecture-tags">
-                    <span class="architecture-tag architecture-tag-matters" data-owner="matters">里長室</span>
-                    <span class="architecture-tag architecture-tag-matters" data-owner="matters">守望相助隊</span>
-                    <span class="architecture-tag architecture-tag-roost" data-owner="roost">Coop Review Console</span>
-                  </div>
-                </article>
-              </div>
-            </section>
-            <div class="architecture-flow" aria-hidden="true"><span></span></div>
-            <section class="architecture-layer architecture-layer-core" data-layer="core">
-              <header><span>02</span><div><small>Product core</small><strong>平台核心與領域服務</strong></div></header>
-              <div class="architecture-node-grid architecture-node-grid-two">
-                <article class="architecture-node" data-node="api">
-                  <small>API gateway</small><strong>GraphQL 與服務入口</strong><p>驗證請求、權限與平台資料契約</p>
-                  <div class="architecture-tags"><span class="architecture-tag architecture-tag-matters" data-owner="matters">matters-server</span></div>
-                </article>
-                <article class="architecture-node" data-node="domains">
-                  <small>Domain services</small><strong>內容、帳號、社交與交易</strong><p>決定文章狀態、帳號權限、排序及通知</p>
-                  <div class="architecture-tags"><span class="architecture-tag architecture-tag-roost" data-owner="roost">Coop Action callback</span></div>
-                </article>
-              </div>
-            </section>
-            <div class="architecture-flow" aria-hidden="true"><span></span></div>
-            <section class="architecture-layer architecture-layer-governance" data-layer="governance">
-              <header><span>03</span><div><small>Governance plane</small><strong>治理決策層</strong></div></header>
-              <div class="architecture-node-grid architecture-node-grid-four">
-                <article class="architecture-node" data-node="detect">
-                  <small>Detect</small><strong>偵測與訊號</strong><p>內容分數、行為特徵與已知樣態</p>
-                  <div class="architecture-tags">
-                    <span class="architecture-tag architecture-tag-matters" data-owner="matters">垃圾模型</span>
-                    <span class="architecture-tag architecture-tag-roost" data-owner="roost">Model Community</span>
-                    <span class="architecture-tag architecture-tag-roost" data-owner="roost">Coop Signals</span>
-                  </div>
-                </article>
-                <article class="architecture-node" data-node="investigate">
-                  <small>Investigate</small><strong>關聯與調查</strong><p>跨帳號模式、事件查詢與群集線索</p>
-                  <div class="architecture-tags">
-                    <span class="architecture-tag architecture-tag-matters" data-owner="matters">集團偵測</span>
-                    <span class="architecture-tag architecture-tag-matters" data-owner="matters">海巡</span>
-                    <span class="architecture-tag architecture-tag-roost" data-owner="roost">Osprey</span>
-                  </div>
-                </article>
-                <article class="architecture-node" data-node="review">
-                  <small>Review</small><strong>人為審查</strong><p>取得脈絡、記錄理由並作成決定</p>
-                  <div class="architecture-tags">
-                    <span class="architecture-tag architecture-tag-matters" data-owner="matters">里長室</span>
-                    <span class="architecture-tag architecture-tag-matters" data-owner="matters">守望相助</span>
-                    <span class="architecture-tag architecture-tag-roost" data-owner="roost">Coop Queues</span>
-                  </div>
-                </article>
-                <article class="architecture-node" data-node="enforce">
-                  <small>Enforce & remedy</small><strong>處置、救濟與稽核</strong><p>限制能見度、恢復內容、通知與透明度</p>
-                  <div class="architecture-tags">
-                    <span class="architecture-tag architecture-tag-matters" data-owner="matters">小黑屋</span>
-                    <span class="architecture-tag architecture-tag-matters" data-owner="matters">救濟機制</span>
-                    <span class="architecture-tag architecture-tag-roost" data-owner="roost">Coop Appeals</span>
-                  </div>
-                </article>
-              </div>
-            </section>
-            <div class="architecture-flow" aria-hidden="true"><span></span></div>
-            <section class="architecture-layer architecture-layer-data" data-layer="data">
-              <header><span>04</span><div><small>Data & async</small><strong>資料與非同步基礎設施</strong></div></header>
-              <div class="architecture-node-grid architecture-node-grid-four architecture-node-grid-compact">
-                <article class="architecture-node"><small>Records</small><strong>PostgreSQL</strong><p>產品、治理與稽核資料</p></article>
-                <article class="architecture-node"><small>Queue & cache</small><strong>Redis</strong><p>快取、工作佇列與事件協調</p></article>
-                <article class="architecture-node"><small>Discovery</small><strong>搜尋與推薦</strong><p>內容索引、排序及可見度</p></article>
-                <article class="architecture-node"><small>Workers</small><strong>Lambda 與排程</strong><p>模型、發布、通知與背景工作</p></article>
-              </div>
-            </section>
-            <div class="architecture-flow" aria-hidden="true"><span></span></div>
-            <section class="architecture-layer architecture-layer-distribution" data-layer="distribution">
-              <header><span>05</span><div><small>Distribution</small><strong>發布、互通與抗審查</strong></div></header>
-              <div class="architecture-node-grid architecture-node-grid-three architecture-node-grid-compact">
-                <article class="architecture-node"><small>Durability</small><strong>IPFS／IPNS</strong><p>靜態內容保存與可驗證發布</p></article>
-                <article class="architecture-node"><small>Access</small><strong>Onion Gateway</strong><p>Tor 入口與內容擷取邊界</p></article>
-                <article class="architecture-node"><small>Interoperability</small><strong>Fediverse Gateway</strong><p>ActivityPub 投遞與聯邦狀態</p></article>
-              </div>
-              <div class="architecture-tags architecture-layer-tags">
-                <span class="architecture-tag architecture-tag-matters" data-owner="matters">抗審查發布</span>
-                <span class="architecture-tag architecture-tag-roost architecture-tag-gap" data-owner="roost">ROOST 無直接對應</span>
-              </div>
-            </section>
-          </div>
-          <figcaption>箭頭代表主要資料與決策方向。實際系統包含同步與非同步回路，為了閱讀清楚而省略部分內部連線。</figcaption>
+          <div class="architecture-map-legend"><span><i class="legend-base"></i>平台底圖</span><span><i class="legend-matters"></i>Matters</span><span><i class="legend-roost"></i>ROOST</span><span><i class="legend-gap"></i>沒有對應</span></div>
+          <figcaption>四個步驟都使用同一張底圖。往下捲動時，只會增加或切換模組標籤，方便直接比較。</figcaption>
         </figure>
       </div>
       <div class="architecture-story-column" aria-label="架構圖分段說明">
-        <article class="architecture-story is-active" data-scene-trigger="base" data-scene-title="平台基礎">
-          <span class="architecture-story-number">01</span>
-          <p class="architecture-kicker">先看平台本體</p>
-          <h2>治理必須接在產品行為上</h2>
-          <p>讀者看到的文章、動態與留言由 Matters Web 呈現，Matters Server 管理內容、帳號、社交關係、排序與通知。資料庫與工作佇列支撐日常操作，發布層再把部分內容送往 IPFS、Onion 或聯邦宇宙。</p>
-          <p>因此，「移除」、「摺疊」、「降低排序」、「凍結」與「恢復」都不是抽象標籤。每項決定最後都要回到平台核心，改變某個內容或帳號在產品中的實際狀態。</p>
+        <article class="architecture-story is-active" data-scene-trigger="base" data-scene-title="01 平台骨架">
+          <div class="architecture-story-heading"><span>01</span><i class="architecture-step-icon step-icon-map" aria-hidden="true"><b></b><b></b><b></b><b></b></i></div>
+          <p class="architecture-kicker">先看共同底圖</p>
+          <h2>使用者發文後，平台要處理哪些事</h2>
+          <p>讀者在前台發文、留言或檢舉，平台核心負責權限、內容狀態、排序與通知。資料庫和工作佇列保存紀錄，發布元件再把部分內容送到站外。</p>
+          <p>治理決定最後都要回到產品。摺疊留言、降低曝光、凍結帳號或恢復內容，都必須改變平台裡的實際狀態。</p>
         </article>
-        <article class="architecture-story" data-scene-trigger="matters" data-scene-title="Matters 治理模組">
-          <span class="architecture-story-number">02</span>
-          <p class="architecture-kicker">放入 Matters 標籤</p>
-          <h2>治理能力分散在產品、後台與社群制度</h2>
-          <p>垃圾模型提供內容分數，集團偵測補足跨帳號行為線索，海巡把已知樣態轉成候選或處置。里長室讓站務人員檢視清單及採取動作，守望相助隊則把一部分明確垃圾留言交由受信任社群成員處理。</p>
-          <p>小黑屋影響內容能否進入特定發現面，救濟機制串起案件、理由、申訴、覆核、恢復與透明度。抗審查發布位於更外圍，處理內容如何保存、存取及跨站流通。</p>
+        <article class="architecture-story" data-scene-trigger="matters" data-scene-title="02 Matters 模組">
+          <div class="architecture-story-heading"><span>02</span><i class="architecture-step-icon step-icon-matters" aria-hidden="true"><b></b><b></b><b></b></i></div>
+          <p class="architecture-kicker">加上 Matters 的做法</p>
+          <h2>偵測、審查與申訴直接接在產品上</h2>
+          <p>垃圾模型找單篇內容，集團偵測找跨帳號行為，海巡把已知樣態送進候選清單。站務人員在里長室處理較廣的案件，守望相助隊則只處理權限範圍內的垃圾留言。</p>
+          <p>小黑屋調整內容曝光，救濟機制負責申訴、覆核與恢復。IPFS、Onion 與 Fediverse 位在發布端，處理保存、存取與跨站流通。</p>
         </article>
-        <article class="architecture-story" data-scene-trigger="roost" data-scene-title="ROOST 對位">
-          <span class="architecture-story-number">03</span>
-          <p class="architecture-kicker">放入 ROOST 標籤</p>
-          <h2>三組工具覆蓋治理迴路的不同位置</h2>
-          <p>Model Community 提供開放安全模型、政策套件與評估資源，可成為偵測層的輸入。Osprey 接收平台事件，運行規則、標記實體、回傳結果並支援調查。Coop 接收內容與檢舉，執行規則、路由人工審查、記錄決策，再透過 callback 要求平台執行 Action。</p>
-          <p>ROOST 的強項在可拆裝與跨平台重用。平台仍需提供資料契約、權限、政策、審查人員、反向動作及使用者通知。</p>
+        <article class="architecture-story" data-scene-trigger="roost" data-scene-title="03 ROOST 工具">
+          <div class="architecture-story-heading"><span>03</span><i class="architecture-step-icon step-icon-roost" aria-hidden="true"><b></b><b></b><b></b></i></div>
+          <p class="architecture-kicker">換看 ROOST</p>
+          <h2>Model Community、Osprey、Coop 各接一段</h2>
+          <p>Model Community 提供模型與評估材料。Osprey 接收平台事件，套用規則並協助調查。Coop 接收內容與檢舉，安排自動規則或人工審查，保存決定與申訴，再用 callback 請平台執行處置。</p>
+          <p>ROOST 不會替平台決定政策，也不會自動補上審查人員、權限、使用者通知或發布系統。這些工作仍由採用工具的平台負責。</p>
         </article>
-        <article class="architecture-story" data-scene-trigger="compare" data-scene-title="差異與接點">
-          <span class="architecture-story-number">04</span>
-          <p class="architecture-kicker">最後疊在一起</p>
-          <h2>可以互補，不能直接互換</h2>
-          <p>Matters 的治理模組長在單一社群產品裡，理解文章、動態、留言、帳號、頻道、推薦與社群角色。ROOST 把偵測、事件調查與審查流程抽象成可移植元件，適合在不同平台之間重用。</p>
-          <p>若 Matters 導入 ROOST，最自然的方式是保留既有社群制度與產品處置，將 Osprey 或 Model Community 接入訊號與調查層，再用 Coop 統整 Queue、Decision、Appeal 與稽核。抗審查發布仍由 Matters 的 IPFS、Onion 與 Fediverse 元件承擔。</p>
+        <article class="architecture-story" data-scene-trigger="compare" data-scene-title="04 並排比較">
+          <div class="architecture-story-heading"><span>04</span><i class="architecture-step-icon step-icon-compare" aria-hidden="true"><b></b><b></b></i></div>
+          <p class="architecture-kicker">把兩邊放在一起</p>
+          <h2>ROOST 補工具，Matters 保留平台規則</h2>
+          <p>Matters 的模組知道文章、留言、帳號、推薦面與社群角色。ROOST 提供可在不同平台重用的模型資源、事件調查與審查工具。</p>
+          <p>若要整合，可以先把 Model Community 與 Osprey 接到偵測、調查層，再用 Coop 管理 Queue、Decision 與 Appeal。最終處置、社群制度與抗審查發布仍由 Matters 負責。</p>
         </article>
       </div>
     </section>
     <section class="architecture-section architecture-section-matters" id="matters-modules" aria-labelledby="matters-modules-title">
       <div class="architecture-section-heading">
         <p class="architecture-kicker">Matters 治理模組</p>
-        <h2 id="matters-modules-title">一套從發現異常到恢復權利的產品內治理</h2>
-        <p>以下名稱有些是程式模組，有些是操作介面或社群制度。把它們放回架構層次後，責任邊界會比只看功能清單清楚。</p>
+        <h2 id="matters-modules-title">Matters 的治理模組各放在哪裡</h2>
+        <p>這些名稱有的是程式模組，有的是操作介面或社群制度。以下逐項說明用途，以及從公開資料還無法確認的部分。</p>
       </div>
       <div class="architecture-module-grid">
         <article class="architecture-module-card">
           <div class="architecture-module-meta"><span>偵測</span><i class="status-dot status-code"></i>程式碼可定位</div>
           <h3>垃圾模型</h3>
           <p>文章、留言與動態可保存 <code>spam_score</code> 及人工標記。模型適合提供排序、分流與候選線索，實際排除範圍仍取決於內容類型、功能開關及產品查詢。</p>
-          <p>Matters 的特色是能把管理員標記、守望相助結果與申訴翻案帶回本地資料迴路，形成貼近華語社群的樣本。</p>
+          <p>管理員標記、守望相助結果與申訴翻案可以留在本地資料中，繼續用來整理華語社群的垃圾樣態。</p>
         </article>
         <article class="architecture-module-card">
           <div class="architecture-module-meta"><span>調查</span><i class="status-dot status-code"></i>程式碼可定位</div>
@@ -207,14 +138,14 @@
         <article class="architecture-module-card">
           <div class="architecture-module-meta"><span>社群審查</span><i class="status-dot status-public"></i>公開頁可驗證</div>
           <h3>守望相助隊</h3>
-          <p>受信任成員可處理範圍明確的垃圾留言，公開紀錄包含理由、時間、執行者顯示名稱、申訴與站方覆核狀態。權限刻意不延伸到文章刪除或帳號停權。</p>
-          <p>這是一項制度設計，也是一條可稽核資料流。公開紀錄、範圍限制與站方恢復權限共同降低志工治理的風險。</p>
+          <p>受信任成員可處理範圍明確的垃圾留言，公開紀錄包含理由、時間、執行者顯示名稱、申訴與站方覆核狀態。這項權限不包含刪除文章或停權帳號。</p>
+          <p>公開紀錄讓外界看得到處置，有限權限避免志工碰到過重的決定，站方則保留覆核與恢復權。</p>
           <a href="https://community-watch.matters.town/">查看公開頁 <span aria-hidden="true">↗</span></a>
         </article>
         <article class="architecture-module-card">
           <div class="architecture-module-meta"><span>自動化</span><i class="status-dot status-check"></i>運行狀態另查</div>
           <h3>海巡與 Coastguard</h3>
-          <p>海巡機器人使用留言垃圾模型與守望相助的既有移除樣本掃描候選。這條路徑的價值在於把社群判斷轉成可重複使用的樣態，同時保留候選來源及處置紀錄。</p>
+          <p>海巡機器人使用留言垃圾模型與守望相助的既有移除樣本掃描候選，並保留候選來源及處置紀錄。社群過去做過的判斷因此可以再次用於篩選。</p>
           <p>候選池、精度門檻、執行環境與人為核准模式會影響實際覆蓋率，不能只用模型檔案推斷目前自動處置範圍。</p>
         </article>
         <article class="architecture-module-card">
@@ -226,23 +157,23 @@
         <article class="architecture-module-card">
           <div class="architecture-module-meta"><span>救濟</span><i class="status-dot status-public"></i>公開頁可驗證</div>
           <h3>申訴、覆核與透明度</h3>
-          <p>救濟橫跨案件、事件、通知、申訴、人工覆核、恢復及透明度彙整，不只是一張申訴表單。後端已有 moderation case／event 與彙整服務，公開頁提供申訴入口及制度說明。</p>
-          <p>完整閉環仍要確認原處置能否被反向執行、使用者是否收到結果，以及透明度數字是否排除敏感資料。</p>
+          <p>救濟包含案件、事件、通知、申訴、人工覆核、恢復及透明度彙整。後端已有 moderation case／event 與彙整服務，公開頁也提供申訴入口及制度說明。</p>
+          <p>仍要確認三件事，原處置能否撤回、使用者是否收到結果，以及透明度數字是否排除敏感資料。</p>
           <a href="https://matters.town/appeals">查看申訴與救濟中心 <span aria-hidden="true">↗</span></a>
         </article>
         <article class="architecture-module-card">
           <div class="architecture-module-meta"><span>發布韌性</span><i class="status-dot status-code"></i>程式碼可定位</div>
           <h3>抗審查與跨站流通</h3>
           <p>IPFS／IPNS 處理可驗證的靜態發布，Onion Gateway 提供 Tor 存取入口，Fediverse Gateway 承擔 ActivityPub 投遞、狀態與重試。三者處理的是保存、存取與互通，不是內容分類。</p>
-          <p>這一層說明平台治理不只涉及刪除有害內容，也包括保護合法內容免於單點封鎖及讓作者保有更長期的可攜性。</p>
+          <p>這些元件保護合法內容免於單點封鎖，也讓作者保有較長期的內容可攜性。</p>
         </article>
       </div>
     </section>
     <section class="architecture-section architecture-section-roost" id="roost-modules" aria-labelledby="roost-modules-title">
       <div class="architecture-section-heading">
         <p class="architecture-kicker">ROOST 工具對位</p>
-        <h2 id="roost-modules-title">用三個核心專案組合出治理管線</h2>
-        <p>ROOST 專案刻意降低對單一產品資料模型的依賴。採用者可以只導入其中一段，也可以把三者接成偵測、調查、審查與處置迴路。</p>
+        <h2 id="roost-modules-title">三個核心專案各自負責什麼</h2>
+        <p>ROOST 的工具不綁定單一社群產品。可以只導入目前缺少的一段，也可以依序接上偵測資源、事件調查與審查處置。</p>
       </div>
       <div class="architecture-roost-flow" aria-label="ROOST 核心工具資料流">
         <article>
@@ -265,14 +196,14 @@
       </div>
       <aside class="architecture-ecosystem-note">
         <strong>生態系資源的角色</strong>
-        <p>Awesome Safety Tools 協助尋找可評估工具，ROOST Community 提供協作與專案治理資料，Playground 與 Integration Example 用於示範及學習。這些資源支援採用流程，並不會直接進入平台的即時內容治理資料流。</p>
+        <p>Awesome Safety Tools 是工具清單，ROOST Community 收錄協作與專案治理資料，Playground 和 Integration Example 提供示範。它們可用來研究與試作，但不會直接處理平台上的內容。</p>
       </aside>
     </section>
     <section class="architecture-section architecture-section-differences" id="architecture-differences" aria-labelledby="architecture-differences-title">
       <div class="architecture-section-heading">
         <p class="architecture-kicker">差異盤點</p>
-        <h2 id="architecture-differences-title">Matters 的在地治理，與 ROOST 的通用基礎設施</h2>
-        <p>兩者處理的問題有大量交集，抽象層次與責任範圍則不同。以下比較採用系統邊界，不以功能名稱是否相似作為唯一判斷。</p>
+        <h2 id="architecture-differences-title">同一項工作，Matters 與 ROOST 怎麼做</h2>
+        <p>兩邊有不少相似功能，負責的範圍卻不同。以下直接比較誰掌握產品資料、誰執行處置，以及整合時還要補哪些工作。</p>
       </div>
       <div class="architecture-comparison" role="table" aria-label="Matters 與 ROOST 差異比較">
         <div class="architecture-comparison-head" role="row">
@@ -294,7 +225,7 @@
           <strong role="cell">處置控制</strong><p role="cell">原生 mutation 可直接改變內容、帳號、限制與推薦查詢。</p><p role="cell">Coop 以 callback 要求平台執行 Action，Osprey 回傳 Verdict 或 Effect。</p><p role="cell">Action handler 必須冪等、有權限檢查，並可回報成功或失敗。</p>
         </div>
         <div class="architecture-comparison-row" role="row">
-          <strong role="cell">申訴與透明度</strong><p role="cell">案件、事件、公開紀錄、站方覆核、恢復與透明度頁面形成產品內閉環。</p><p role="cell">Coop 可路由 Appeal、記錄決策及回傳結果，外部通知與反向 Action 由平台完成。</p><p role="cell">將 Matters 案件識別、原決策及恢復結果對應到 Coop Appeal，避免稽核斷裂。</p>
+          <strong role="cell">申訴與透明度</strong><p role="cell">案件、事件、公開紀錄、站方覆核、恢復與透明度頁面都在產品內。</p><p role="cell">Coop 可路由 Appeal、記錄決策及回傳結果，外部通知與反向 Action 由平台完成。</p><p role="cell">將 Matters 案件識別、原決策及恢復結果對應到 Coop Appeal，避免稽核斷裂。</p>
         </div>
         <div class="architecture-comparison-row" role="row">
           <strong role="cell">抗審查發布</strong><p role="cell">另有 IPFS／IPNS、Onion 與 Fediverse 元件，處理保存、存取及互通。</p><p role="cell">目前核心工具聚焦線上安全工作流，沒有直接對應的內容發布韌性層。</p><p role="cell">保留 Matters 發布元件。Mirror 只處理程式庫鏡像，不能代替內容可用性。</p>
@@ -303,8 +234,8 @@
     </section>
     <section class="architecture-section architecture-integration" aria-labelledby="architecture-integration-title">
       <div class="architecture-section-heading">
-        <p class="architecture-kicker">可能的組合方式</p>
-        <h2 id="architecture-integration-title">保留 Matters 的制度，把 ROOST 放進可重用的位置</h2>
+        <p class="architecture-kicker">整合草圖</p>
+        <h2 id="architecture-integration-title">如果 Matters 要接 ROOST，資料可以這樣走</h2>
       </div>
       <ol class="architecture-integration-flow">
         <li><span>01</span><div><strong>送出事件與內容</strong><p>Matters 將必要且最小化的 Item、Report 或事件送至 Osprey／Coop。</p></div></li>
@@ -314,15 +245,15 @@
         <li><span>05</span><div><strong>完成救濟與公開</strong><p>把 Appeal、覆核、反向動作與匿名化透明度指標接回既有制度。</p></div></li>
       </ol>
       <aside>
-        <strong>最重要的保留項</strong>
-        <p>守望相助隊的有限權限與公開問責、小黑屋和凍結的政策區分、華語垃圾樣態的資料迴路，以及 IPFS／Onion／Fediverse 的發布韌性，都屬於 Matters 的平台知識。導入通用工具時應將其明確建模，不宜被預設設定覆蓋。</p>
+        <strong>整合時不要漏掉</strong>
+        <p>守望相助隊的有限權限與公開紀錄、小黑屋和凍結的政策區分、華語垃圾樣態，以及 IPFS／Onion／Fediverse 發布流程，都是 Matters 已有的規則。接入通用工具時，需要逐項保留。</p>
       </aside>
     </section>
     <section class="architecture-sources" aria-labelledby="architecture-sources-title">
       <div>
         <p class="architecture-kicker">來源與限制</p>
-        <h2 id="architecture-sources-title">可追溯的時間點盤點</h2>
-        <p>本頁以 2026 年 8 月 8 日取得的公開程式庫預設分支為基準，並檢查公開頁面是否可存取。程式碼存在用於確認責任邊界，正式環境設定、資料品質與實際處置仍需營運端證據。</p>
+        <h2 id="architecture-sources-title">本頁查了哪些來源</h2>
+        <p>本頁以 2026 年 8 月 8 日取得的公開程式庫預設分支為基準，也檢查公開頁面是否可存取。程式碼可用來確認功能放在哪裡，正式環境設定、資料品質與實際處置仍需營運端證據。</p>
       </div>
       <div class="architecture-source-groups">
         <details open>

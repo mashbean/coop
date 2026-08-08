@@ -15,9 +15,9 @@ const outputCssPath = path.join(bookRoot, "architecture.css");
 const outputJsPath = path.join(bookRoot, "architecture.js");
 
 const pageUrl = "https://roost.mashbean.net/matters-roost.html";
-const title = "Matters 與 ROOST 架構對照｜平台治理繁中盤點";
+const title = "Matters 治理架構與 ROOST 工具對照";
 const description =
-  "用同一張社群平台架構圖，盤點 Matters 的垃圾模型、集團偵測、里長室、守望相助、救濟、小黑屋與抗審查模組，並對照 ROOST 工具。";
+  "查看 Matters 平台骨架與治理模組，並比較 Model Community、Osprey、Coop 分別能接在哪裡。";
 
 await Promise.all([
   access(pagePath),

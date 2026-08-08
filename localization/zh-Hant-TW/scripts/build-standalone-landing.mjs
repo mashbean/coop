@@ -21,7 +21,7 @@ const pageUrl = "https://roost.mashbean.net/";
 const imageUrl = `${pageUrl}assets/coop-zh-hant-tw-social.png`;
 const title = "Coop 台灣繁體中文指南｜小型社群的開放內容治理工具";
 const description =
-  "ROOST Coop 的台灣繁體中文指南，協助小型社群理解內容治理、人工審查、申訴、稽核與技術導入。";
+  "ROOST Coop 台灣繁體中文文件，收錄檢舉、人工審查、處置、申訴、稽核、API 與部署說明，供小型社群評估導入。";
 
 await Promise.all([access(socialImagePath), access(sourceCssPath)]);
 
