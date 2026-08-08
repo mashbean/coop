@@ -42,15 +42,6 @@
     <a href="https://github.com/mashbean/coop/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW">查看來源與審查紀錄</a>
   </aside>
 
-  <a class="landing-case-study" href="matters-roost.html">
-    <span class="landing-case-study-index">台灣平台實例</span>
-    <span class="landing-case-study-copy">
-      <strong>把 Matters 與 ROOST 放上同一張架構圖</strong>
-      <span>看 Matters 的垃圾偵測、里長室、守望相助、申訴與抗審查發布，再對照 ROOST 能接手的部分。</span>
-    </span>
-    <b aria-hidden="true">前往架構盤點 →</b>
-  </a>
-
   <section class="landing-fit" aria-labelledby="landing-fit-title">
     <p id="landing-fit-title">這些團隊可以先從文件開始</p>
     <ul>
@@ -211,6 +202,15 @@
       <a class="landing-button landing-button-secondary" href="toc.html">查看完整目錄</a>
     </div>
   </section>
+
+  <a class="landing-case-study" href="matters-roost.html">
+    <span class="landing-case-study-index">中文實作案例</span>
+    <span class="landing-case-study-copy">
+      <strong>中文實作案例：Matters 與 ROOST 比較</strong>
+      <span>看 Matters 的垃圾偵測、里長室、守望相助、申訴與抗審查發布，再對照 ROOST 能接手的部分。</span>
+    </span>
+    <b aria-hidden="true">查看比較 →</b>
+  </a>
 
   <footer class="landing-footer">
     <p>Coop 由 <a href="https://roost.tools">ROOST</a> 推出。本繁中工作區維護於 <a href="https://github.com/mashbean/coop">mashbean/coop</a> fork。</p>
