@@ -5,11 +5,11 @@
       <span><strong>Coop</strong><small>台灣繁體中文指南</small></span>
     </a>
     <nav aria-label="本頁導覽">
-      <a href="matters-roost.html">Matters 對照</a>
       <a href="#landing-ecosystem-title">ROOST 生態系</a>
       <a href="#landing-paths-title">依角色開始</a>
       <a href="#landing-flow-title">治理流程</a>
       <a href="#landing-proof-title">驗證方式</a>
+      <a href="matters-roost.html">台灣案例比較</a>
       <a class="landing-nav-cta" href="toc.html">完整目錄</a>
     </nav>
   </header>
