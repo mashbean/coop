@@ -52,12 +52,12 @@ for (const anchor of ["landing-ecosystem-title", "landing-paths-title", "landing
 }
 
 for (const resourceUrl of [
-  "https://mashbean.github.io/osprey/",
-  "https://mashbean.github.io/awesome-safety-tools/",
-  "https://mashbean.github.io/community/",
-  "https://mashbean.github.io/model-community/",
-  "https://mashbean.github.io/playground/zh-Hant-TW/",
-  "https://github.com/mashbean/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md",
+  "https://open-safety-tw.github.io/osprey/",
+  "https://open-safety-tw.github.io/awesome-safety-tools/",
+  "https://open-safety-tw.github.io/community/",
+  "https://open-safety-tw.github.io/model-community/",
+  "https://open-safety-tw.github.io/playground/zh-Hant-TW/",
+  "https://github.com/open-safety-tw/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md",
   "https://github.com/mashbean/mirror/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md",
 ]) {
   expect(indexHtml.includes(`href="${resourceUrl}"`), `missing ecosystem link ${resourceUrl}`);

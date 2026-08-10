@@ -179,13 +179,13 @@
         <article>
           <span>01</span><small>Detection resources</small><h3>Model Community</h3>
           <p>提供開放安全模型、政策套件、評估方法及導入資源。它供應偵測材料，本身不是平台的即時處置服務。</p>
-          <a href="https://mashbean.github.io/model-community/">閱讀繁中資料 <b aria-hidden="true">↗</b></a>
+          <a href="https://open-safety-tw.github.io/model-community/">閱讀繁中資料 <b aria-hidden="true">↗</b></a>
         </article>
         <i aria-hidden="true">→</i>
         <article>
           <span>02</span><small>Rules & investigation</small><h3>Osprey</h3>
           <p>接收事件串流，以 SML 規則擷取 Features、辨識 Entities、套用 Labels、產生 Effects 與 Verdicts，並讓分析人員查詢及回看事件。</p>
-          <a href="https://mashbean.github.io/osprey/">閱讀繁中指南 <b aria-hidden="true">↗</b></a>
+          <a href="https://open-safety-tw.github.io/osprey/">閱讀繁中指南 <b aria-hidden="true">↗</b></a>
         </article>
         <i aria-hidden="true">→</i>
         <article>
@@ -289,6 +289,6 @@
   </main>
   <footer class="architecture-footer">
     <p>非官方、由 mashbean 維護的台灣繁體中文架構盤點</p>
-    <div><a href="./">回到介紹頁</a><a href="attribution.html">授權與翻譯聲明</a><a href="https://github.com/mashbean/coop">查看 repository</a></div>
+    <div><a href="./">回到介紹頁</a><a href="attribution.html">授權與翻譯聲明</a><a href="https://github.com/open-safety-tw/coop">查看 repository</a></div>
   </footer>
 </div>

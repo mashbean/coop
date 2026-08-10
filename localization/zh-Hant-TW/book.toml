@@ -7,5 +7,5 @@ src = "src"
 build-dir = "book"
 
 [output.html]
-git-repository-url = "https://github.com/mashbean/coop"
-edit-url-template = "https://github.com/mashbean/coop/edit/codex/zh-hant-tw-foundation/localization/zh-Hant-TW/{path}"
+git-repository-url = "https://github.com/open-safety-tw/coop"
+edit-url-template = "https://github.com/open-safety-tw/coop/edit/codex/zh-hant-tw-foundation/localization/zh-Hant-TW/{path}"

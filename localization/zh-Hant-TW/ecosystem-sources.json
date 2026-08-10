@@ -2,25 +2,25 @@
   {
     "name": "Community",
     "upstream": "roostorg/community",
-    "fork": "mashbean/community",
+    "fork": "open-safety-tw/community",
     "localizationBranch": "codex/zh-hant-tw-foundation",
     "manifestPath": "localization/zh-Hant-TW/sources.tsv",
     "defaultBranch": "main",
-    "publicUrl": "https://mashbean.github.io/community/"
+    "publicUrl": "https://open-safety-tw.github.io/community/"
   },
   {
     "name": "Awesome Safety Tools",
     "upstream": "roostorg/awesome-safety-tools",
-    "fork": "mashbean/awesome-safety-tools",
+    "fork": "open-safety-tw/awesome-safety-tools",
     "localizationBranch": "codex/zh-hant-tw-localization",
     "manifestPath": "localization/zh-Hant-TW/sources.tsv",
     "defaultBranch": "main",
-    "publicUrl": "https://mashbean.github.io/awesome-safety-tools/"
+    "publicUrl": "https://open-safety-tw.github.io/awesome-safety-tools/"
   },
   {
     "name": "Coop",
     "upstream": "roostorg/coop",
-    "fork": "mashbean/coop",
+    "fork": "open-safety-tw/coop",
     "localizationBranch": "codex/zh-hant-tw-foundation",
     "manifestPath": "localization/zh-Hant-TW/sources.tsv",
     "defaultBranch": "main",
@@ -29,32 +29,32 @@
   {
     "name": "Model Community",
     "upstream": "roostorg/model-community",
-    "fork": "mashbean/model-community",
+    "fork": "open-safety-tw/model-community",
     "localizationBranch": "codex/zh-hant-tw-foundation",
     "manifestPath": "localization/zh-Hant-TW/sources.tsv",
     "sourceCommitPath": "localization/zh-Hant-TW/SOURCE_COMMIT",
     "defaultBranch": "main",
-    "publicUrl": "https://mashbean.github.io/model-community/"
+    "publicUrl": "https://open-safety-tw.github.io/model-community/"
   },
   {
     "name": "Playground",
     "upstream": "roostorg/playground",
-    "fork": "mashbean/playground",
+    "fork": "open-safety-tw/playground",
     "localizationBranch": "codex/zh-hant-tw-foundation",
     "manifestPath": "localization/zh-Hant-TW/sources.tsv",
     "sourceCommitPath": "localization/zh-Hant-TW/SOURCE_COMMIT",
     "defaultBranch": "main",
-    "publicUrl": "https://mashbean.github.io/playground/zh-Hant-TW/"
+    "publicUrl": "https://open-safety-tw.github.io/playground/zh-Hant-TW/"
   },
   {
     "name": "Integration Example",
     "upstream": "roostorg/coop-integration-example",
-    "fork": "mashbean/coop-integration-example",
+    "fork": "open-safety-tw/coop-integration-example",
     "localizationBranch": "codex/zh-hant-tw-foundation",
     "manifestPath": "localization/zh-Hant-TW/sources.tsv",
     "sourceCommitPath": "localization/zh-Hant-TW/SOURCE_COMMIT",
     "defaultBranch": "main",
-    "publicUrl": "https://github.com/mashbean/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md"
+    "publicUrl": "https://github.com/open-safety-tw/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md"
   },
   {
     "name": "Mirror",
@@ -69,10 +69,10 @@
   {
     "name": "Osprey",
     "upstream": "roostorg/osprey",
-    "fork": "mashbean/osprey",
+    "fork": "open-safety-tw/osprey",
     "localizationBranch": "codex/zh-hant-tw-foundation",
     "manifestPath": "localization/zh-Hant-TW/sources.tsv",
     "defaultBranch": "main",
-    "publicUrl": "https://mashbean.github.io/osprey/"
+    "publicUrl": "https://open-safety-tw.github.io/osprey/"
   }
 ]

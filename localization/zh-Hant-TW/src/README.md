@@ -39,7 +39,7 @@
   <aside class="landing-disclosure" aria-label="版本與審查狀態">
     <div class="landing-disclosure-mark"><span aria-hidden="true"></span>目前狀態</div>
     <p><strong>這是 mashbean 維護的非官方繁中社群版本。</strong>第一輪翻譯與自動檢查已完成。第二位語言審查，以及法律、兒少安全、資安等領域審查仍待進行，內容也尚未由 ROOST 上游採納。</p>
-    <a href="https://github.com/mashbean/coop/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW">查看來源與審查紀錄</a>
+    <a href="https://github.com/open-safety-tw/coop/tree/codex/zh-hant-tw-foundation/localization/zh-Hant-TW">查看來源與審查紀錄</a>
   </aside>
 
   <section class="landing-fit" aria-labelledby="landing-fit-title">
@@ -76,19 +76,19 @@
       </li>
     </ol>
     <div class="landing-resource-grid landing-resource-grid-primary">
-      <a class="landing-resource-card landing-resource-osprey" href="https://mashbean.github.io/osprey/">
+      <a class="landing-resource-card landing-resource-osprey" href="https://open-safety-tw.github.io/osprey/">
         <div class="landing-resource-meta"><span>第一輪完成</span><span>26 / 26 份</span></div>
         <h3>Osprey</h3>
         <p>接收平台事件、執行安全規則、查詢行為模式，可用來追查垃圾訊息、機器人與協同濫用。</p>
         <span class="landing-resource-link">閱讀 Osprey 繁中指南 <b aria-hidden="true">↗</b></span>
       </a>
-      <a class="landing-resource-card landing-resource-tools" href="https://mashbean.github.io/awesome-safety-tools/">
+      <a class="landing-resource-card landing-resource-tools" href="https://open-safety-tw.github.io/awesome-safety-tools/">
         <div class="landing-resource-meta"><span>繁中第一輪完成</span><span>113 項工具</span></div>
         <h3>開放安全工具地圖</h3>
         <p>依雜湊比對、分類、隱私、規則引擎、審查、調查與聯邦宇宙等 14 個類別尋找可評估的工具。</p>
         <span class="landing-resource-link">瀏覽繁中工具清單 <b aria-hidden="true">↗</b></span>
       </a>
-      <a class="landing-resource-card landing-resource-community" href="https://mashbean.github.io/community/">
+      <a class="landing-resource-card landing-resource-community" href="https://open-safety-tw.github.io/community/">
         <div class="landing-resource-meta"><span>繁中第一輪完成</span><span>14 份文件</span></div>
         <h3>ROOST 社群與治理</h3>
         <p>認識專案路線圖、參與角色、社群平台、資安與開發規範，以及文件和會議協作方式。</p>
@@ -96,17 +96,17 @@
       </a>
     </div>
     <div class="landing-resource-grid landing-resource-grid-secondary" aria-label="延伸資源">
-      <a class="landing-mini-resource" href="https://mashbean.github.io/model-community/">
+      <a class="landing-mini-resource" href="https://open-safety-tw.github.io/model-community/">
         <span class="landing-mini-resource-index">01</span>
         <div><strong>Model Community</strong><p>自動處理完成 51 / 51 項，含 37 份第一輪譯文與 14 份高風險安全參考。</p></div>
         <b aria-hidden="true">↗</b>
       </a>
-      <a class="landing-mini-resource" href="https://mashbean.github.io/playground/zh-Hant-TW/">
+      <a class="landing-mini-resource" href="https://open-safety-tw.github.io/playground/zh-Hant-TW/">
         <span class="landing-mini-resource-index">02</span>
         <div><strong>Playground</strong><p>繁中第一輪完成，5 / 5 組來源。收錄社群示範與實驗，未必適合正式環境。</p></div>
         <b aria-hidden="true">↗</b>
       </a>
-      <a class="landing-mini-resource" href="https://github.com/mashbean/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md">
+      <a class="landing-mini-resource" href="https://github.com/open-safety-tw/coop-integration-example/blob/codex/zh-hant-tw-foundation/README.zh-Hant-TW.md">
         <span class="landing-mini-resource-index">03</span>
         <div><strong>Integration Example</strong><p>繁中第一輪完成，1 / 1 份。說明自訂 Signal、規則與 plugin 的工程範例。</p></div>
         <b aria-hidden="true">↗</b>
@@ -174,7 +174,7 @@
       <p class="landing-kicker">更新檢查</p>
       <h2 id="landing-proof-title">每次更新都經過同一組自動檢查</h2>
       <p>來源清單會記錄英文版本。更新時，系統會檢查翻譯結構、程式碼片段、連結與建置結果。語言、法律與領域內容仍要由人員審查。</p>
-      <a class="landing-text-link" href="https://github.com/mashbean/coop/blob/codex/zh-hant-tw-foundation/localization/zh-Hant-TW/WORKFLOW.md">查看完整工作流程 <span aria-hidden="true">↗</span></a>
+      <a class="landing-text-link" href="https://github.com/open-safety-tw/coop/blob/codex/zh-hant-tw-foundation/localization/zh-Hant-TW/WORKFLOW.md">查看完整工作流程 <span aria-hidden="true">↗</span></a>
     </div>
     <ul class="landing-proof-list">
       <li><span aria-hidden="true">✓</span><div><strong>來源狀態</strong><p>37 份 Markdown 對應固定 commit 與明確審查狀態。</p></div></li>
@@ -213,7 +213,7 @@
   </a>
 
   <footer class="landing-footer">
-    <p>Coop 由 <a href="https://roost.tools">ROOST</a> 推出。本繁中工作區維護於 <a href="https://github.com/mashbean/coop">mashbean/coop</a> fork。</p>
+    <p>Coop 由 <a href="https://roost.tools">ROOST</a> 推出。本繁中工作區維護於 <a href="https://github.com/open-safety-tw/coop">open-safety-tw/coop</a> fork。</p>
     <p><a href="attribution.html">授權與翻譯聲明</a> · <a href="project-overview.html">專案概覽</a></p>
   </footer>
 </div>
